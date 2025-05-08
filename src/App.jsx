@@ -44,7 +44,7 @@ function App() {
   
     const timeOut = setTimeout(() => {
       setLoading(false);
-      clearInterval(interval); // Ensure interval is cleared when loading ends
+      clearInterval(interval);
     }, 1250);
   
     return () => {
