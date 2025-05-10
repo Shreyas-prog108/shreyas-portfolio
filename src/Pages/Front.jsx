@@ -95,7 +95,7 @@ const Front = () => {
               <p className="command-prompt" onClick={scrollToProjects} style={{ cursor: 'pointer' }}><span className="prompt">welcome@portfolio:~$</span> ls projects/</p>
               <div className="projects-list">
                 <p className="output">Portfolio-Website</p>
-                <p className="output">E-commerce-App</p>
+                <p className="output">Meme Generator App</p>
                 <p className="output">Weather-App</p>
               </div>
               <p><span className="prompt">welcome@portfolio:~$</span> cat contact.txt</p><p className="output">
@@ -167,7 +167,7 @@ const Front = () => {
               <h3>Weather App</h3>
               <p>A weather application that fetches data from a weather API.</p>
               <div className="tech-stack">
-                <span>JavaScript</span>
+                <span>React</span>
                 <span>API</span>
                 <span>CSS</span>
               </div>
