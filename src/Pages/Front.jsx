@@ -145,21 +145,21 @@ const Front = () => {
               </div>
               <div className="project-links">
                 <a href="#" className="button">Live Demo</a>
-                <a href="#" className="button">GitHub</a>
+                <a href="https://github.com/Shreyas-prog108/my-portfolio" className="button">GitHub</a>
               </div>
             </div>
             
             <div className="project-card">
-              <h3>E-commerce App</h3>
-              <p>A full-featured e-commerce application with cart functionality.</p>
+              <h3>Meme Generator App</h3>
+              <p>A customized meme generator app.</p>
               <div className="tech-stack">
                 <span>React</span>
-                <span>Node.js</span>
-                <span>MongoDB</span>
+                <span>Bootstrap</span>
+                <span>Imgflip API</span>
               </div>
               <div className="project-links">
                 <a href="#" className="button">Live Demo</a>
-                <a href="#" className="button">GitHub</a>
+                <a href="https://github.com/Shreyas-prog108/Meme-generator-app" className="button">GitHub</a>
               </div>
             </div>
             
@@ -173,7 +173,7 @@ const Front = () => {
               </div>
               <div className="project-links">
                 <a href="#" className="button">Live Demo</a>
-                <a href="#" className="button">GitHub</a>
+                <a href="https://github.com/Shreyas-prog108/vatavaran" className="button">GitHub</a>
               </div>
             </div>
           </div>
