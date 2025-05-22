@@ -145,7 +145,7 @@ const Front = () => {
               </div>
               <div className="project-links">
                 <a href="#" className="button">Live Demo</a>
-                <a href="https://github.com/Shreyas-prog108/my-portfolio" className="button">GitHub</a>
+                <a href="https://github.com/Shreyas-prog108/my-portfolio" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
             
