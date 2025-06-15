@@ -71,7 +71,7 @@ const Front = () => {
     };
   return (
 
-    <div className="portfolio">
+    <div id="portfolio" className="portfolio">
       <header>
         <div className="terminal-nav">
           <div className="terminal-buttons">
