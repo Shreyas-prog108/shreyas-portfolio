@@ -42,7 +42,7 @@ const Front = () => {
   };
 
   const icons = [
-    { icon: <FaHome />, link: "#" },
+    { icon: <FaHome />, link: "#portfolio" },
     //{ icon: <PiNotebookDuotone />, link: "#" },
     { icon: <FaGithub />, link: "https://github.com/Shreyas-prog108" },
     { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/shreyaspandeyy/" },
