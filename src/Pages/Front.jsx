@@ -1,5 +1,5 @@
 import '../App.css';
-import { FaHome, FaGithub, FaLinkedin,} from "react-icons/fa";
+import { FaHome, FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 //import { PiNotebookDuotone } from "react-icons/pi";
 import { SiGmail } from "react-icons/si";
 import { FaXTwitter } from 'react-icons/fa6';
@@ -43,7 +43,7 @@ const Front = () => {
 
   const icons = [
     { icon: <FaHome />, link: "#portfolio" },
-    //{ icon: <PiNotebookDuotone />, link: "#" },
+    { icon: <FaFileAlt />, link: "https://drive.google.com/file/d/124OM9Rbu67MV4u147mrO8E0dwUjap1mJ/view?usp=sharing" },
     { icon: <FaGithub />, link: "https://github.com/Shreyas-prog108" },
     { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/shreyaspandeyy/" },
     { icon: <FaXTwitter />, link: "https://x.com/Shreyas_Pandeyy" },
@@ -52,11 +52,11 @@ const Front = () => {
   ];
 
   const skills = [
-    "AWS", "GCP", "CI/CD", "DevOps", "Docker", "Kubernetes", "Linux", "GraphQL", "RestAPI",
-    "Node.js", "OAuth", "Prisma", "React", "Remix.js", "Next.js", "Vue.js","Flask", "Tailwind CSS", "Bootstrap", "Canva", "Javascript", "Typescript", "C/C++", "Python",
-    "Agentic AI", "LLM RAG", "N8n", "Vapi.ai", "Wati.io", "Machine Learning", "Pytorch", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Pydantic",
-    "MongoDB", "MySQL", "PostgreSQL", "SQLite", "Kafka","Redis",
-    "Git", "GitHub", "GitLab"];
+    "AWS", "GCP", "CI/CD", "DevOps", "Linux", "GraphQL", "RestAPI",
+    "Node.js", "Prisma", "React", "Next.js", "Vue.js", "Flask", "Tailwind CSS", "Bootstrap", "Javascript", "Typescript", "C/C++", "Python",
+    "Langchain", "Langgraph","RAG", "N8n", "Vapi.ai", "Wati.io", "ML", "Pytorch", "Scikit-learn",
+    "MongoDB", "MySQL", "PostgreSQL", "SQLite", "Celery", "Redis",
+    "Git", "GitHub", "GitLab", "VectorDB"];
     const scrollToSkills = () => {
       const skillsSection = document.getElementById('skills-section');
       if (skillsSection) {
@@ -94,9 +94,12 @@ const Front = () => {
               <p className="command-prompt" onClick={scrollToSkills} style={{ cursor: 'pointer' }}><span className="prompt">welcome@portfolio:~$</span> cat skills.txt</p>
               <p className="command-prompt" onClick={scrollToProjects} style={{ cursor: 'pointer' }}><span className="prompt">welcome@portfolio:~$</span> ls projects/</p>
               <div className="projects-list">
-                <p className="output">Portfolio-Website</p>
-                <p className="output">Meme Generator App</p>
-                <p className="output">Weather-App</p>
+                <p className="output">Envilo - Secure Environment Variables and Secrets Management Platform</p>
+                <p className="output">Citecrawler - AI Powered Comprehensive Research Paper Searching Platform</p>
+                <p className="output">Parkpro - A Parking management Application</p>
+                <p className="output">Cetaphil Parody - UI Practice project</p>
+                <p className="output">Data Analyst Agent - AI Powered Data Analysis Agent</p>
+                <p className="output">Coffee Roasting Neural Network Algorithm</p>
               </div>
               <p><span className="prompt">welcome@portfolio:~$</span> cat contact.txt</p><p className="output">
               <a href="mailto:shreyaspandey.ethical@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></p>
@@ -136,47 +139,89 @@ const Front = () => {
           <h2>Projects</h2>
           <div className="project-grid">
             <div className="project-card">
-              <h3>Portfolio Website</h3>
-              <p>A personal portfolio website built with React and Vite.</p>
+              <h3>Citecrawler</h3>
+              <p>AI Powered Comprehensive Research Paper Searching Platform</p>
               <div className="tech-stack">
-                <span>React</span>
-                <span>Vite</span>
-                <span>CSS</span>
+                <span>Next.js</span>
+                <span>FastAPI</span>
+                <span>VectorDB</span>
+                <span>Tailwind CSS</span>
               </div>
               <div className="project-links">
-                <a href="#" className="button">Live Demo</a>
-                <a href="https://github.com/Shreyas-prog108/my-portfolio" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/Shreyas-prog108/citecrawler" className="button">Live Demo</a>
+                <a href="https://github.com/Shreyas-prog108/citecrawler" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
             
             <div className="project-card">
-              <h3>Meme Generator App</h3>
-              <p>A customized meme generator app.</p>
+              <h3>Envilo</h3>
+              <p>Secure Environment Variables and Secrets Management Platform</p>
               <div className="tech-stack">
-                <span>React</span>
-                <span>Bootstrap</span>
-                <span>Imgflip API</span>
+                <span>Next.js</span>
+                <span>MongoDB</span>
+                <span>Tailwind CSS</span>
               </div>
               <div className="project-links">
-                <a href="#" className="button">Live Demo</a>
-                <a href="https://github.com/Shreyas-prog108/Meme-generator-app" className="button">GitHub</a>
+                <a href="https://github.com/Shreyas-prog108/envilo" className="button">Live Demo</a>
+                <a href="https://github.com/Shreyas-prog108/envilo" className="button">GitHub</a>
               </div>
             </div>
             
             <div className="project-card">
-              <h3>Weather App</h3>
-              <p>A weather application that fetches data from a weather API.</p>
+              <h3>Parkpro</h3>
+              <p>A Parking management Application</p>
               <div className="tech-stack">
-                <span>React</span>
-                <span>API</span>
-                <span>CSS</span>
+                <span>Flask</span>
+                <span>Jinja</span>
+                <span>Bootstrap CSS</span>
+                <span>PostgreSQL</span>
               </div>
               <div className="project-links">
-                <a href="#" className="button">Live Demo</a>
-                <a href="https://github.com/Shreyas-prog108/vatavaran" className="button">GitHub</a>
+              <h4>Publicly available soon</h4>
+                {/* <a href="" className="button">Live Demo</a>
+                <a href="https://github.com/Shreyas-prog108/vatavaran" className="button">GitHub</a> */}
               </div>
             </div>
-          </div>
+          <div className="project-card">
+              <h3>Cetaphil Parody</h3>
+              <p>UI practice project</p>
+              <div className="tech-stack">
+                <span>React.js</span>
+                <span>Tailwind CSS</span>
+              </div>
+              <div className="project-links">
+                <a href="https://cetaphilparody.vercel.app/" className="button">Live Demo</a>
+                <a href="https://github.com/Shreyas-prog108/cetaphil-parody" className="button">GitHub</a>
+              </div>
+              </div>
+            <div className="project-card">
+              <h3>Data Analyst Agent</h3>
+              <p>AI Powered Data Analysis Agent</p>
+              <div className="tech-stack">
+                <span>FastAPI</span>
+                <span>MongoDB</span>
+                <span>Tailwind CSS</span>
+              </div>
+              <div className="project-links">
+                <a href="https://tds-data-analyst.up.railway.app/" className="button">Live Demo</a>
+                <a href="https://github.com/23f3001837/tds-data-analyst" className="button">GitHub</a>
+              </div>
+            </div>
+            <div className="project-card">
+              <h3>Coffee Roasting Algorithm</h3>
+              <p>A neural network algorithm written in python</p>
+              <div className="tech-stack">
+                <span>Python</span>
+                <span>Numpy</span>
+                <span>Neural Network</span>
+              </div>
+              <div className="project-links">
+                <h4>Publicly available soon</h4>
+                {/* <a href="https://tds-data-analyst.up.railway.app/" className="button">Live Demo</a>
+                <a href="https://github.com/23f3001837/tds-data-analyst" className="button">GitHub</a> */}
+              </div>
+            </div>
+            </div>
         </section>
         
 
@@ -217,6 +262,7 @@ const Front = () => {
           <a href="https://x.com/Shreyas_Pandeyy" className="social-link" target="_blank" rel="noopener noreferrer">X</a>
           <a href="https://www.linkedin.com/in/shreyaspandeyy/" className="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://github.com/Shreyas-prog108" className="social-link" target="_blank" rel="noopener noreferrer">Github</a>
+          <a href="https://drive.google.com/file/d/124OM9Rbu67MV4u147mrO8E0dwUjap1mJ/view?usp=sharing" className="social-link" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
       </footer>
       <div className="fixed-icons">
