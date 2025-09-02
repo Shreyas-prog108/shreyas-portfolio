@@ -177,9 +177,8 @@ const Front = () => {
                 <span>PostgreSQL</span>
               </div>
               <div className="project-links">
-              <h4>Publicly available soon</h4>
-                {/* <a href="" className="button">Live Demo</a>
-                <a href="https://github.com/Shreyas-prog108/vatavaran" className="button">GitHub</a> */}
+                <a href="https://parkpro-backend.onrender.com/" className="button">Live Demo</a>
+                <a href="https://github.com/Shreyas-prog108/parkpro" className="button">GitHub</a>
               </div>
             </div>
           <div className="project-card">
