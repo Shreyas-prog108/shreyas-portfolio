@@ -193,6 +193,18 @@ const Front = () => {
                 <a href="https://github.com/Shreyas-prog108/cetaphil-parody" className="button">GitHub</a>
               </div>
               </div>
+              <div className="project-card">
+              <h3>Doxtract</h3>
+              <p>PDF, DOCX, TXT to JSON Converter</p>
+              <div className="tech-stack">
+                <span>FastAPI</span>
+                <span>Javascript</span>
+              </div>
+              <div className="project-links">
+                <a href="https://doxtract.vercel.app/" className="button">Live Demo</a>
+                <a href="https://github.com/Shreyas-prog108/doxtract" className="button">GitHub</a>
+              </div>
+            </div>
             <div className="project-card">
               <h3>Data Analyst Agent</h3>
               <p>AI Powered Data Analysis Agent</p>
