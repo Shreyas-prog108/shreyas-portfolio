@@ -97,6 +97,7 @@ const Front = () => {
                 <p className="output">Envilo - Secure Environment Variables and Secrets Management Platform</p>
                 <p className="output">Citecrawler - AI Powered Comprehensive Research Paper Searching Platform</p>
                 <p className="output">Parkpro - A Parking management Application</p>
+                <p className="output">Doxtract - PDF, DOCX, TXT to JSON Converter</p>
                 <p className="output">Cetaphil Parody - UI Practice project</p>
                 <p className="output">Data Analyst Agent - AI Powered Data Analysis Agent</p>
                 <p className="output">Coffee Roasting Neural Network Algorithm</p>
@@ -181,6 +182,18 @@ const Front = () => {
                 <a href="https://github.com/Shreyas-prog108/parkpro" className="button">GitHub</a>
               </div>
             </div>
+            <div className="project-card">
+              <h3>Doxtract</h3>
+              <p>PDF, DOCX, TXT to JSON Converter</p>
+              <div className="tech-stack">
+                <span>FastAPI</span>
+                <span>Javascript</span>
+              </div>
+              <div className="project-links">
+                <a href="https://doxtract.vercel.app/" className="button">Live Demo</a>
+                <a href="https://github.com/Shreyas-prog108/doxtract" className="button">GitHub</a>
+              </div>
+            </div>
           <div className="project-card">
               <h3>Cetaphil Parody</h3>
               <p>UI practice project</p>
@@ -193,18 +206,6 @@ const Front = () => {
                 <a href="https://github.com/Shreyas-prog108/cetaphil-parody" className="button">GitHub</a>
               </div>
               </div>
-              <div className="project-card">
-              <h3>Doxtract</h3>
-              <p>PDF, DOCX, TXT to JSON Converter</p>
-              <div className="tech-stack">
-                <span>FastAPI</span>
-                <span>Javascript</span>
-              </div>
-              <div className="project-links">
-                <a href="https://doxtract.vercel.app/" className="button">Live Demo</a>
-                <a href="https://github.com/Shreyas-prog108/doxtract" className="button">GitHub</a>
-              </div>
-            </div>
             <div className="project-card">
               <h3>Data Analyst Agent</h3>
               <p>AI Powered Data Analysis Agent</p>
