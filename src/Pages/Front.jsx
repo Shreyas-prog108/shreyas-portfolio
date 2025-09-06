@@ -215,7 +215,7 @@ const Front = () => {
                 <span>Tailwind CSS</span>
               </div>
               <div className="project-links">
-                <a href="https://tds-data-analyst.up.railway.app/" className="button">Live Demo</a>
+                {/* <a href="https://tds-data-analyst.up.railway.app/" className="button">Live Demo</a> */}
                 <a href="https://github.com/Shreyas-prog108/data-analysis-agent" className="button">GitHub</a>
               </div>
             </div>
