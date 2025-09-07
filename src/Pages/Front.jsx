@@ -149,7 +149,7 @@ const Front = () => {
                 <span>Tailwind CSS</span>
               </div>
               <div className="project-links">
-                <a href="https://github.com/Shreyas-prog108/citecrawler" className="button">Live Demo</a>
+                <a href="https://github.com/Shreyas-prog108/citecrawler" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
                 <a href="https://github.com/Shreyas-prog108/citecrawler" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
@@ -163,8 +163,8 @@ const Front = () => {
                 <span>Tailwind CSS</span>
               </div>
               <div className="project-links">
-                <a href="https://github.com/Shreyas-prog108/envilo" className="button">Live Demo</a>
-                <a href="https://github.com/Shreyas-prog108/envilo" className="button">GitHub</a>
+                <a href="https://github.com/Shreyas-prog108/envilo" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com/Shreyas-prog108/envilo" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
             
@@ -178,8 +178,8 @@ const Front = () => {
                 <span>PostgreSQL</span>
               </div>
               <div className="project-links">
-                <a href="https://parkpro-backend.onrender.com/" className="button">Live Demo</a>
-                <a href="https://github.com/Shreyas-prog108/parkpro" className="button">GitHub</a>
+                <a href="https://parkpro-backend.onrender.com/" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com/Shreyas-prog108/parkpro" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
             <div className="project-card">
@@ -190,8 +190,8 @@ const Front = () => {
                 <span>Javascript</span>
               </div>
               <div className="project-links">
-                <a href="https://doxtract.vercel.app/" className="button">Live Demo</a>
-                <a href="https://github.com/Shreyas-prog108/doxtract" className="button">GitHub</a>
+                <a href="https://doxtract.vercel.app/" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com/Shreyas-prog108/doxtract" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
           <div className="project-card">
@@ -202,8 +202,8 @@ const Front = () => {
                 <span>Tailwind CSS</span>
               </div>
               <div className="project-links">
-                <a href="https://cetaphilparody.vercel.app/" className="button">Live Demo</a>
-                <a href="https://github.com/Shreyas-prog108/cetaphil-parody" className="button">GitHub</a>
+                <a href="https://cetaphilparody.vercel.app/" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com/Shreyas-prog108/cetaphil-parody" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
               </div>
             <div className="project-card">
@@ -215,8 +215,7 @@ const Front = () => {
                 <span>Tailwind CSS</span>
               </div>
               <div className="project-links">
-                {/* <a href="https://tds-data-analyst.up.railway.app/" className="button">Live Demo</a> */}
-                <a href="https://github.com/Shreyas-prog108/data-analysis-agent" className="button">GitHub</a>
+                <a href="https://github.com/Shreyas-prog108/data-analysis-agent" className="button" target="_blank" rel="noopener noreferrer">GitHub \</a>
               </div>
             </div>
             <div className="project-card">
@@ -228,9 +227,8 @@ const Front = () => {
                 <span>Neural Network</span>
               </div>
               <div className="project-links">
-                <h4>Publicly available soon</h4>
-                {/* <a href="https://tds-data-analyst.up.railway.app/" className="button">Live Demo</a>
-                <a href="https://github.com/23f3001837/tds-data-analyst" className="button">GitHub</a> */}
+                {/* <a href="https://tds-data-analyst.up.railway.app/" className="button">Live Demo</a> */}
+                <a href="https://github.com/Shreyas-prog108/coffee-roasting" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
             </div>
