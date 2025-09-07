@@ -187,7 +187,7 @@ const Front = () => {
               <p>PDF, DOCX, TXT to JSON Converter</p>
               <div className="tech-stack">
                 <span>FastAPI</span>
-                <span>Javascript</span>
+                <span>Next.js</span>
               </div>
               <div className="project-links">
                 <a href="https://doxtract.vercel.app/" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
@@ -211,11 +211,10 @@ const Front = () => {
               <p>AI Powered Data Analysis Agent</p>
               <div className="tech-stack">
                 <span>FastAPI</span>
-                <span>MongoDB</span>
-                <span>Tailwind CSS</span>
+                <span>Gemini API</span>
               </div>
               <div className="project-links">
-                <a href="https://github.com/Shreyas-prog108/data-analysis-agent" className="button" target="_blank" rel="noopener noreferrer">GitHub \</a>
+                <a href="https://github.com/Shreyas-prog108/data-analysis-agent" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
             <div className="project-card">
