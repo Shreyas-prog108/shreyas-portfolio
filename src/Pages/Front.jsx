@@ -63,6 +63,12 @@ const Front = () => {
         skillsSection.scrollIntoView({ behavior: 'smooth' });
       }
     };
+    const scrollToExperience = () => {
+      const skillsSection = document.getElementById('experience-section');
+      if (skillsSection) {
+        skillsSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
     const scrollToProjects = () => {
       const projectsSection = document.getElementById('projects-section');
       if (projectsSection) {
@@ -90,18 +96,10 @@ const Front = () => {
             <div className="terminal-content">
               <p><span className="prompt">welcome@portfolio:~$</span> whoami<span className="cursor1"></span></p>
               <p className="output">Shreyas Pandey</p>
-              <p className="output">Developer | Machine Learning Enthusiast | Student</p>
+              <p className="output">Full-Stack Developer | AL&ML Developer | Student</p>
               <p className="command-prompt" onClick={scrollToSkills} style={{ cursor: 'pointer' }}><span className="prompt">welcome@portfolio:~$</span> cat skills.txt</p>
+              <p className="command-prompt" onClick={scrollToExperience} style={{ cursor: 'pointer' }}><span className="prompt">welcome@portfolio:~$</span> ls Experiences/</p>              
               <p className="command-prompt" onClick={scrollToProjects} style={{ cursor: 'pointer' }}><span className="prompt">welcome@portfolio:~$</span> ls projects/</p>
-              <div className="projects-list">
-                <p className="output">Envilo - Secure Environment Variables and Secrets Management Platform</p>
-                <p className="output">Citecrawler - AI Powered Comprehensive Research Paper Searching Platform</p>
-                <p className="output">Parkpro - A Parking management Application</p>
-                <p className="output">Doxtract - PDF, DOCX, TXT to JSON Converter</p>
-                <p className="output">Cetaphil Parody - UI Practice project</p>
-                <p className="output">Data Analyst Agent - AI Powered Data Analysis Agent</p>
-                <p className="output">Coffee Roasting Neural Network Algorithm</p>
-              </div>
               <p><span className="prompt">welcome@portfolio:~$</span> cat contact.txt</p><p className="output">
               <a href="mailto:shreyaspandey.ethical@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></p>
               <p className="output"> <a href="https://www.github.com/Shreyas-prog108/" target="_blank" rel="noopener noreferrer">GitHub</a></p>
@@ -135,6 +133,26 @@ const Front = () => {
        </button>
     ))}
   </div>
+          <section id="experience-section" className='experience'>
+          <h2>Experience</h2>
+          <div className='experience-item'>
+            <div className='experience-header'>
+              <div className='company-role'>
+                <h3>21 Spheres</h3>
+                <h4>Python Developer</h4>
+                <span className='location'>Remote</span>
+              </div>
+              <div className='duration'>April 2025 - August 2025</div>
+            </div>
+            <div className='experience-details'>
+              <ul>
+                <li>Developed and deployed multiple Python-based AI solutions including intelligent automation systems for real-world applications</li>
+                <li>Led end-to-end development of AI agent frameworks, implementing multi-step reasoning and tool integration capabilities</li>
+                <li>Managed cross-functional team of 3 developers in designing and implementing agentic AI systems, ensuring successful delivery of scalable AI solutions</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 </section>
         <section id="projects-section" className="projects">
           <h2>Projects</h2>
@@ -153,7 +171,6 @@ const Front = () => {
                 <a href="https://github.com/Shreyas-prog108/citecrawler" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
-            
             <div className="project-card">
               <h3>Envilo</h3>
               <p>Secure Environment Variables and Secrets Management Platform</p>
@@ -195,17 +212,16 @@ const Front = () => {
               </div>
             </div>
           <div className="project-card">
-              <h3>Cetaphil Parody</h3>
-              <p>UI practice project</p>
+              <h3>FinTerm</h3>
+              <p>A CLI based MCP Server for Stock Market Support</p>
               <div className="tech-stack">
-                <span>React.js</span>
-                <span>Tailwind CSS</span>
+                <span>FastAPI</span>
               </div>
               <div className="project-links">
-                <a href="https://cetaphilparody.vercel.app/" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                <a href="https://github.com/Shreyas-prog108/cetaphil-parody" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/Shreyas-prog108/FinTerm" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
               </div>
+
             <div className="project-card">
               <h3>Data Analyst Agent</h3>
               <p>AI Powered Data Analysis Agent</p>
@@ -226,14 +242,40 @@ const Front = () => {
                 <span>Neural Network</span>
               </div>
               <div className="project-links">
-                {/* <a href="https://tds-data-analyst.up.railway.app/" className="button">Live Demo</a> */}
                 <a href="https://github.com/Shreyas-prog108/coffee-roasting" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
+            <div className="project-card">
+              <h3>Cetaphil Parody</h3>
+              <p>UI practice project</p>
+              <div className="tech-stack">
+                <span>React.js</span>
+                <span>Tailwind CSS</span>
+              </div>
+              <div className="project-links">
+                <a href="https://cetaphilparody.vercel.app/" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com/Shreyas-prog108/cetaphil-parody" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+              </div>
+            <div className="project-card">
+              <h3>HealthEase</h3>
+              <p>Hospital Management System</p>
+              <div className="tech-stack">
+                <span>Vue.js</span>
+                <span>Flask</span>
+                <span>PostgreSQL</span>
+                <span>Redis</span>
+                <span>Celery</span>
+                <span>Bootstrap CSS</span>
+              </div>
+              <div className="project-links">
+                <span>Publicly available soon</span>
+                {/* <a href="https://cetaphilparody.vercel.app/" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com/Shreyas-prog108/cetaphil-parody" className="button" target="_blank" rel="noopener noreferrer">GitHub</a> */}
+              </div>
+              </div>
             </div>
         </section>
-        
-
         
         <section className="contact">
           <h2>Contact</h2>

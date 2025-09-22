@@ -383,6 +383,7 @@ footer {
   background-color: rgba(24, 24, 27, 0.8); /* dark background */
   padding: 10px 20px;
   border-radius: 30px;
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
   backdrop-filter: blur(8px);
   border: 1px solid #444;
 }
@@ -396,4 +397,103 @@ footer {
 .icon-link:hover {
   transform: scale(1.2);
   color: #38bdf8; /* tailwind sky-400 */
+}
+
+/* Experience Section Styles */
+.experience {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.experience h2 {
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.experience-item {
+  background-color: var(--terminal-bg);
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.company-role h3 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.company-role h4 {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.location {
+  color: #888;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.duration {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-align: right;
+}
+
+.experience-details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.experience-details li {
+  color: var(--text-color);
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.experience-details li::before {
+  content: "•";
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .duration {
+    text-align: left;
+  }
+  
+  .experience {
+    padding: 20px;
+  }
 }
