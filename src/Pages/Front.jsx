@@ -167,7 +167,7 @@ const Front = () => {
                 <span>Tailwind CSS</span>
               </div>
               <div className="project-links">
-                <a href="https://github.com/Shreyas-prog108/citecrawler" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://citecrawler.vercel.app/" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
                 <a href="https://github.com/Shreyas-prog108/citecrawler" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
