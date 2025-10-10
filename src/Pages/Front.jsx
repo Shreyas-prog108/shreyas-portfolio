@@ -1,5 +1,5 @@
 import '../App.css';
-import { FaHome, FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
+import { FaHome, FaGithub, FaLinkedin, FaFileAlt, FaExternalLinkAlt } from "react-icons/fa";
 //import { PiNotebookDuotone } from "react-icons/pi";
 import { SiGmail } from "react-icons/si";
 import { FaXTwitter } from 'react-icons/fa6';
@@ -52,11 +52,11 @@ const Front = () => {
   ];
 
   const skills = [
-    "AWS", "GCP", "CI/CD", "DevOps", "Linux", "GraphQL", "RestAPI",
-    "Node.js", "Prisma", "React", "Next.js", "Vue.js", "Flask", "Tailwind CSS", "Bootstrap", "Javascript", "Typescript", "C/C++", "Python",
-    "Langchain", "Langgraph","RAG", "N8n", "Vapi.ai", "Wati.io", "ML", "Pytorch", "Scikit-learn",
-    "MongoDB", "MySQL", "PostgreSQL", "SQLite", "Celery", "Redis",
-    "Git", "GitHub", "GitLab", "VectorDB"];
+    "AWS", "GCP", "CI/CD", "DevOps", "Linux", "Docker", "Kubernetes", "GraphQL", "RestAPI",
+    "Node.js", "Prisma", "React", "Next.js", "Vue.js", "Flask", "FastAPI", "Tailwind CSS", "Shadcn", "Bootstrap", "Javascript", "Typescript", "C/C++", "Python",
+    "Langchain", "Langgraph","RAG", "ML", "Pytorch", "Scikit-learn",
+    "MongoDB", "MySQL", "PostgreSQL", "SQLite", "DuckDB", "Celery", "Redis",
+    "Git", "GitHub", "GitLab", "PineconeDB" ,"Hugging Face"];
     const scrollToSkills = () => {
       const skillsSection = document.getElementById('skills-section');
       if (skillsSection) {
@@ -161,10 +161,14 @@ const Front = () => {
               <h3>Citecrawler</h3>
               <p>AI Powered Comprehensive Research Paper Searching Platform</p>
               <div className="tech-stack">
+                <span>RAG System</span>
                 <span>Next.js</span>
                 <span>FastAPI</span>
-                <span>VectorDB</span>
-                <span>Tailwind CSS</span>
+                <span>PineconeDB</span>
+                <span>Shadcn</span>
+                <span>MongoDB</span>
+                <span>Beautiful Soup</span>
+                <span>Github Auth</span>
               </div>
               <div className="project-links">
                 <a href="https://citecrawler.vercel.app/" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
@@ -205,6 +209,7 @@ const Front = () => {
               <div className="tech-stack">
                 <span>FastAPI</span>
                 <span>Next.js</span>
+                <span>GCP</span>
               </div>
               <div className="project-links">
                 <a href="https://doxtract.vercel.app/" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
@@ -227,6 +232,9 @@ const Front = () => {
               <p>AI Powered Data Analysis Agent</p>
               <div className="tech-stack">
                 <span>FastAPI</span>
+                <span>Langchain</span>
+                <span>DuckDB</span>
+                <span>Beautiful Soup</span>
                 <span>Gemini API</span>
               </div>
               <div className="project-links">
@@ -276,7 +284,53 @@ const Front = () => {
               </div>
             </div>
         </section>
-        
+
+          <section className="achievements">
+            <h2>Achievements</h2>
+            <div className="achievement-item">
+              <div className="achievement-header">
+                <div className="achievement-info">
+                  <h3>AWS Certified Cloud Practitioner</h3>
+                  <div className='duration'>September 2025</div>
+                </div>
+                <a
+                  href="https://www.credly.com/badges/b7f2d72f-cd35-47c0-9520-a382ff5dca55/public_url"
+                  className="external-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View credential on Credly"
+                  title="View credential on Credly"
+                >
+                  <FaExternalLinkAlt />
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section className="achievements">
+            <h2>Education</h2>
+            <div className="achievement-item">
+              <div className="achievement-header">
+                <div className="achievement-info">
+                  <h3>Indian Institute of Technology, Madras</h3>
+                  <div className='duration'>September 2023 - July 2027</div>
+                </div>
+                <span> B.S. - Data Science and Applications</span>
+                
+              </div>
+                  <br></br>
+              <div className="achievement-header">
+                <div className="achievement-info">
+                  <h3>KIET Group of Institutions, Ghaziabad</h3>
+                  <div className='duration'>September 2023 - June 2027</div>
+                </div>
+                <span> B.Tech - Computer Science</span>
+                
+              </div>
+            </div>
+          </section>
+
+ 
         <section className="contact">
           <h2>Contact</h2>
           <div className="contact-form">

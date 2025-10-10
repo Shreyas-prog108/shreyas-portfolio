@@ -262,10 +262,10 @@ h2::after {
 .button:hover {
   background: transparent;
   color: #ffffff;
-  border-color: var(--accent-gradient);
-  box-shadow: 0 0 0 2px rgba(34, 211, 238, 0.35) inset,
-              0 0 12px rgba(34, 211, 238, 0.55),
-              0 0 24px rgba(34, 211, 238, 0.35);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 255, 157, 0.35) inset,
+              0 0 12px rgba(0, 255, 157, 0.55),
+              0 0 24px rgba(0, 255, 157, 0.35);
   transform: translateY(-1px);
 }
 
@@ -273,10 +273,10 @@ h2::after {
   outline: none;
   background: transparent;
   color: #ffffff;
-  border-color: var(--accent-gradient);
-  box-shadow: 0 0 0 2px rgba(34, 211, 238, 0.5) inset,
-              0 0 0 3px rgba(34, 211, 238, 0.35),
-              0 0 14px rgba(34, 211, 238, 0.45);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 255, 157, 0.5) inset,
+              0 0 0 3px rgba(0, 255, 157, 0.35),
+              0 0 14px rgba(0, 255, 157, 0.45);
 }
 
 .about-content {
@@ -335,10 +335,10 @@ textarea {
 .submit-button:hover {
   background: transparent;
   color: #ffffff;
-  border-color: var(--accent-gradient);
-  box-shadow: 0 0 0 2px rgba(34, 211, 238, 0.35) inset,
-              0 0 12px rgba(34, 211, 238, 0.55),
-              0 0 24px rgba(34, 211, 238, 0.35);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 255, 157, 0.35) inset,
+              0 0 12px rgba(0, 255, 157, 0.55),
+              0 0 24px rgba(0, 255, 157, 0.35);
   transform: translateY(-1px);
 }
 
@@ -346,10 +346,10 @@ textarea {
   outline: none;
   background: transparent;
   color: #ffffff;
-  border-color: var(--accent-gradient);
-  box-shadow: 0 0 0 2px rgba(34, 211, 238, 0.5) inset,
-              0 0 0 3px rgba(34, 211, 238, 0.35),
-              0 0 14px rgba(34, 211, 238, 0.45);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 255, 157, 0.5) inset,
+              0 0 0 3px rgba(0, 255, 157, 0.35),
+              0 0 14px rgba(0, 255, 157, 0.45);
 }
 
 .success-message {
@@ -433,6 +433,71 @@ footer {
   transform: scale(1.2);
   color: #38bdf8; /* tailwind sky-400 */
 }
+
+/* Achievements Section */
+.achievements {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.achievement-item {
+  background-color: var(--terminal-bg);
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.achievement-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-color: var(--primary-color);
+}
+
+.achievement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.achievement-info .duration {
+  color: var(--secondary-color);
+  font-size: 0.95rem;
+  margin-top: 4px;
+  text-align: left; /* override global .duration right-align */
+}
+
+.achievement-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 6px;
+  font-size: 1.25rem;
+}
+
+.external-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  color: #ffffff;
+  background: var(--accent-gradient);
+  border: 2px solid transparent;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.external-link:hover {
+  background: transparent;
+  color: #ffffff;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 255, 157, 0.35) inset,
+              0 0 12px rgba(0, 255, 157, 0.55),
+              0 0 24px rgba(0, 255, 157, 0.35);
+  transform: translateY(-1px);
+}
+
+.external-link svg { font-size: 1rem; }
 
 /* Experience Section Styles */
 .experience {
