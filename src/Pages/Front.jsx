@@ -96,7 +96,7 @@ const Front = () => {
             <div className="terminal-content">
               <p><span className="prompt">welcome@portfolio:~$</span> whoami<span className="cursor1"></span></p>
               <p className="output">Shreyas Pandey</p>
-              <p className="output">Full-Stack Developer | AL&ML Developer | Student</p>
+              <p className="output">Full-Stack Developer | AI&ML Developer | Student</p>
               <p className="command-prompt" onClick={scrollToSkills} style={{ cursor: 'pointer' }}><span className="prompt">welcome@portfolio:~$</span> cat skills.txt</p>
               <p className="command-prompt" onClick={scrollToExperience} style={{ cursor: 'pointer' }}><span className="prompt">welcome@portfolio:~$</span> ls Experiences/</p>              
               <p className="command-prompt" onClick={scrollToProjects} style={{ cursor: 'pointer' }}><span className="prompt">welcome@portfolio:~$</span> ls projects/</p>
