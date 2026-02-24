@@ -302,8 +302,7 @@ export default function Whoami() {
                 <span>Beautiful Soup</span>
               </div>
               <div className="project-links">
-                <a href="https://parkpro-backend.onrender.com/" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                <a href="https://github.com/Shreyas-prog108/parkpro" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/Shreyas-prog108/data-analysis-agent" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
           </div>
