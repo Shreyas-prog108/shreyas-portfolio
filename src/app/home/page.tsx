@@ -98,33 +98,33 @@ export default function Whoami() {
     "Git", "GitHub", "GitLab", "PineconeDB" ,"Hugging Face"
   ]
 
-  // Featured blog posts (top 3)
-  const featuredBlogs = [
-    {
-      id: 1,
-      title: "Getting Started with Next.js 15",
-      excerpt: "A comprehensive guide to building modern web applications with Next.js 15 and the App Router.",
-      date: "2025-01-05",
-      readTime: "5 min read",
-      tags: ["Next.js", "React", "Web Development"]
-    },
-    {
-      id: 2,
-      title: "Building AI-Powered Applications",
-      excerpt: "Exploring the integration of AI models into web applications using modern frameworks.",
-      date: "2025-01-04",
-      readTime: "8 min read",
-      tags: ["AI", "Machine Learning", "Web Development"]
-    },
-    {
-      id: 3,
-      title: "The Future of Full-Stack Development",
-      excerpt: "Discussing emerging trends and technologies shaping the future of full-stack development.",
-      date: "2025-01-03",
-      readTime: "6 min read",
-      tags: ["Full-Stack", "Technology", "Future"]
-    }
-  ]
+  // // Featured blog posts (top 3)
+  // const featuredBlogs = [
+  //   {
+  //     id: 1,
+  //     title: "Getting Started with Next.js 15",
+  //     excerpt: "A comprehensive guide to building modern web applications with Next.js 15 and the App Router.",
+  //     date: "2025-01-05",
+  //     readTime: "5 min read",
+  //     tags: ["Next.js", "React", "Web Development"]
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Building AI-Powered Applications",
+  //     excerpt: "Exploring the integration of AI models into web applications using modern frameworks.",
+  //     date: "2025-01-04",
+  //     readTime: "8 min read",
+  //     tags: ["AI", "Machine Learning", "Web Development"]
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "The Future of Full-Stack Development",
+  //     excerpt: "Discussing emerging trends and technologies shaping the future of full-stack development.",
+  //     date: "2025-01-03",
+  //     readTime: "6 min read",
+  //     tags: ["Full-Stack", "Technology", "Future"]
+  //   }
+  // ]
 
   const scrollToSkills = () => {
     const skillsSection = document.getElementById('skills-section')
@@ -174,7 +174,7 @@ export default function Whoami() {
             <div className="terminal-content">
               <p><span className="prompt">welcome@whoami:~$</span> whoami<span className="cursor1"></span></p>
               <p className="output">Shreyas Pandey</p>
-              <p className="output">Full-Stack Developer | AI&ML Developer | Student</p>
+              <p className="output"> AIML Engineer | Student</p>
               <p className="command-prompt" onClick={scrollToSkills} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> cat skills.txt</p>
               <p className="command-prompt" onClick={scrollToExperience} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> ls Experiences</p>              
               <p className="command-prompt" onClick={scrollToProjects} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> ls projects</p>
@@ -192,7 +192,7 @@ export default function Whoami() {
           <h2>About Me</h2>
           <div className="about-content">
             <div className="about-text">
-              <p>I&apos;m a passionate front-end developer and student with a focus on creating responsive and user-friendly web applications. My journey in web development started with HTML and CSS, and I&apos;ve since expanded my skills to include JavaScript, React, and various other technologies.</p>
+              <p>I&apos;m a passionate AIML Engineer and student with a focus on creating scalable and impactful AI solutions. My expertise lies around AI Agents, Langchain, Langgraph, AI SDK,NLP, Vector DB, MCP Server, and Machine Learning. </p>
               <p>When I&apos;m not coding, you can find me exploring new technologies, reading tech blogs, or contributing to open-source projects.</p>
             </div>
           </div>
@@ -276,29 +276,30 @@ export default function Whoami() {
             </div>
             <div className="project-card featured-project">
               <div className="project-header">
-                <h3>Envilo</h3>
+                <h3>FinAlpha</h3>
               </div>
-              <p>Secure Environment Variables and Secrets Management Platform</p>
+              <p>A Deep Financial Analysis Agent</p>
               <div className="tech-stack">
-                <span>Next.js</span>
-                <span>MongoDB</span>
-                <span>Tailwind CSS</span>
+                <span>FastAPI</span>
+                <span>Langchain</span>
+                <span>Langgraph</span>
+                <span>Alpha Vantage API</span>
+                <span>Perplexity Deep Search</span>
               </div>
               <div className="project-links">
-                <a href="https://github.com/Shreyas-prog108/envilo" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                <a href="https://github.com/Shreyas-prog108/envilo" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/Shreyas-prog108/fin-alpha" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
             <div className="project-card featured-project">
               <div className="project-header">
-                <h3>Parkpro</h3>
+                <h3>Data Analyst Agent</h3>
               </div>
-              <p>A Parking management Application</p>
+              <p>AI Powered Data Analysis Agent</p>
               <div className="tech-stack">
-                <span>Flask</span>
-                <span>Jinja</span>
-                <span>Bootstrap CSS</span>
-                <span>PostgreSQL</span>
+                <span>FastAPI</span>
+                <span>Langchain</span>
+                <span>DuckDB</span>
+                <span>Beautiful Soup</span>
               </div>
               <div className="project-links">
                 <a href="https://parkpro-backend.onrender.com/" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
@@ -313,7 +314,7 @@ export default function Whoami() {
           </div>
         </section>
 
-        <section id="blogs-section" className="blogs">
+        {/* <section id="blogs-section" className="blogs">
           <h2>Latest Blog Posts</h2>
           <div className="blog-grid">
             {featuredBlogs.map((post) => (
@@ -350,7 +351,7 @@ export default function Whoami() {
               View All Blog Posts →
             </a>
           </div>
-        </section>
+        </section> */}
 
           <section className="achievements">
             <h2>Achievements</h2>
@@ -479,7 +480,7 @@ export default function Whoami() {
         <p>© {new Date().getFullYear()} Shreyas Pandey | Built with Love</p>
         <div className="social-links">
           <a href="/projects" className="social-link">Projects</a>
-          <a href="/blogs" className="social-link">Blog</a>
+          {/* <a href="/blogs" className="social-link">Blog</a> */}
           <a href="https://x.com/Shreyas_Pandeyy" className="social-link" target="_blank" rel="noopener noreferrer">X</a>
           <a href="https://www.linkedin.com/in/shreyaspandeyy/" className="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://github.com/Shreyas-prog108" className="social-link" target="_blank" rel="noopener noreferrer">Github</a>

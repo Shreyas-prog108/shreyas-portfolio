@@ -14,8 +14,8 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Shreyas Pandey - Full-Stack Developer & AI Engineer',
-  description: 'Experienced Full-Stack Developer and AI Engineer specializing in Next.js, React, Python, and AI/ML solutions. Currently working at Fills AI and 21 Spheres. Explore my projects, blog, and technical expertise.',
+  title: 'Shreyas Pandey - AIML Engineer',
+  description: 'Experienced AIML Engineer specializing in complex AI/ML solutions. Currently working at Fills AI. Explore my projects, blog, and technical expertise.',
   keywords: ['Full-Stack Developer', 'AI Engineer', 'Next.js', 'React', 'Python', 'Machine Learning', 'Web Development', 'Shreyas Pandey'],
   authors: [{ name: 'Shreyas Pandey' }],
   creator: 'Shreyas Pandey',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://shreyaspandey.dev',
+    url: 'https://shreyaspandey.me',
     title: 'Shreyas Pandey - Full-Stack Developer & AI Engineer',
     description: 'Experienced Full-Stack Developer and AI Engineer specializing in Next.js, React, Python, and AI/ML solutions.',
     siteName: 'Shreyas Pandey - Whoami',

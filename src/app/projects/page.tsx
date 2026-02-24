@@ -11,28 +11,36 @@ export default function Projects() {
       techStack: ["RAG System", "Next.js", "FastAPI", "PineconeDB", "Shadcn", "MongoDB", "Beautiful Soup", "Github Auth"],
       liveDemo: "https://citecrawler.vercel.app/",
       github: "https://github.com/Shreyas-prog108/citecrawler",
-      featured: false
+      featured: true
     },
     {
       id: 2,
-      title: "Envilo",
-      description: "Secure Environment Variables and Secrets Management Platform",
-      techStack: ["Next.js", "MongoDB", "Tailwind CSS"],
-      liveDemo: "https://github.com/Shreyas-prog108/envilo",
-      github: "https://github.com/Shreyas-prog108/envilo",
-      featured: false
+      title: "Finalpha",
+      description: "A Deep Financial Analysis Agent",
+      techStack: ["FastAPI, Langchain, Langgraph, Perplexity, Groq, Alpha Vantage API, LiveMint RSS"],
+      liveDemo: null,
+      github: "https://github.com/Shreyas-prog108/fin-alpha",
+      featured: true
     },
     {
       id: 3,
-      title: "Parkpro",
-      description: "A Parking management Application",
-      techStack: ["Flask", "Jinja", "Bootstrap CSS", "PostgreSQL"],
-      liveDemo: "https://parkpro-backend.onrender.com/",
-      github: "https://github.com/Shreyas-prog108/parkpro",
-      featured: false
+      title: "Data Analyst Agent",
+      description: "AI Powered Data Analysis Agent",
+      techStack: ["FastAPI", "Langchain", "DuckDB", "Beautiful Soup", "Gemini API"],
+      liveDemo: null,
+      github: "https://github.com/Shreyas-prog108/data-analysis-agent",
+      featured: true
     },
     {
       id: 4,
+      title: "Cinema Audience Forecasting Challenge",
+      description: "Time Series ML Model",
+      techStack: ["Scikit-learn", "Xgboost", "Pandas"],
+      github: "https://github.com/Shreyas-prog108/Cinema-Audience-Forecasting-Challenge",
+      featured: true
+    },
+    {
+      id: 5,
       title: "Doxtract",
       description: "PDF, DOCX, TXT to JSON Converter",
       techStack: ["FastAPI", "Next.js", "GCP"],
@@ -41,25 +49,33 @@ export default function Projects() {
       featured: false
     },
     {
-      id: 5,
-      title: "FinTerm",
-      description: "A CLI based MCP Server for Stock Market Support",
-      techStack: ["FastAPI"],
-      liveDemo: null,
-      github: "https://github.com/Shreyas-prog108/FinTerm",
-      featured: false
-    },
-    {
       id: 6,
-      title: "Data Analyst Agent",
-      description: "AI Powered Data Analysis Agent",
-      techStack: ["FastAPI", "Langchain", "DuckDB", "Beautiful Soup", "Gemini API"],
-      liveDemo: null,
-      github: "https://github.com/Shreyas-prog108/data-analysis-agent",
+      title: "Nasa Space Biology Engine",
+      description: "A customised platform for Nasa Space Biology Archive",
+      techStack: ["FastAPI", "Next.js", "Oauth", "Gemini", "MongoDB"],
+      github: "https://github.com/Shreyas-prog108/nasa-biology-engine",
       featured: false
     },
     {
       id: 7,
+      title: "Envilo",
+      description: "Secure Environment Variables and Secrets Management Platform",
+      techStack: ["Next.js", "PostgreSQL", "Cloudflare", "Nginx", "Tailwind CSS"],
+      // liveDemo: "https://github.com/Shreyas-prog108/envilo",
+      github: "https://github.com/Shreyas-prog108/envilo",
+      featured: false
+    },
+    {
+      id: 8,
+      title: "Parkpro",
+      description: "A Parking management Application",
+      techStack: ["Flask", "Jinja", "Bootstrap CSS", "PostgreSQL"],
+      liveDemo: "https://parkpro-backend.onrender.com/",
+      github: "https://github.com/Shreyas-prog108/parkpro",
+      featured: false
+    },
+    {
+      id: 9,
       title: "Coffee Roasting Algorithm",
       description: "A neural network algorithm written in python",
       techStack: ["Python", "Numpy", "Neural Network"],
@@ -68,16 +84,7 @@ export default function Projects() {
       featured: false
     },
     {
-      id: 8,
-      title: "Cetaphil Parody",
-      description: "UI practice project",
-      techStack: ["React.js", "Tailwind CSS"],
-      liveDemo: "https://cetaphilparody.vercel.app/",
-      github: "https://github.com/Shreyas-prog108/cetaphil-parody",
-      featured: false
-    },
-    {
-      id: 9,
+      id: 10,
       title: "HealthEase",
       description: "Hospital Management System",
       techStack: ["Vue.js", "Flask", "PostgreSQL", "Redis", "Celery", "Bootstrap CSS"],
