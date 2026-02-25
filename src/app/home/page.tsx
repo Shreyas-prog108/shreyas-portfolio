@@ -483,7 +483,7 @@ export default function Whoami() {
           <a href="https://x.com/Shreyas_Pandeyy" className="social-link" target="_blank" rel="noopener noreferrer">X</a>
           <a href="https://www.linkedin.com/in/shreyaspandeyy/" className="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://github.com/Shreyas-prog108" className="social-link" target="_blank" rel="noopener noreferrer">Github</a>
-          <a href="https://drive.google.com/file/d/124OM9Rbu67MV4u147mrO8E0dwUjap1mJ/view?usp=sharing" className="social-link" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href="https://drive.google.com/file/d/1_hUCEYXOh4jejzUZFMyV8OKBXP6-KwCE/view?usp=drivesdk" className="social-link" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
       </footer>
       <div className="fixed-icons">
