@@ -83,7 +83,7 @@ export default function Whoami() {
 
   const icons = [
     { icon: <FaHome />, link: "#whoami" },
-    { icon: <FaFileAlt />, link: "https://drive.google.com/file/d/124OM9Rbu67MV4u147mrO8E0dwUjap1mJ/view?usp=sharing" },
+    { icon: <FaFileAlt />, link: "https://drive.google.com/file/d/1_hUCEYXOh4jejzUZFMyV8OKBXP6-KwCE/view?usp=drivesdk" },
     { icon: <FaGithub />, link: "https://github.com/Shreyas-prog108" },
     { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/shreyaspandeyy/" },
     { icon: <FaXTwitter />, link: "https://x.com/Shreyas_Pandeyy" },
