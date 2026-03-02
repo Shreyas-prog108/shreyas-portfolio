@@ -178,7 +178,7 @@ export default function Whoami() {
               <p className="command-prompt" onClick={scrollToSkills} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> cat skills.txt</p>
               <p className="command-prompt" onClick={scrollToExperience} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> ls Experiences</p>              
               <p className="command-prompt" onClick={scrollToProjects} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> ls projects</p>
-              <p className="command-prompt" onClick={scrollToBlogs} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> ls blogs</p>
+             // <p className="command-prompt" onClick={scrollToBlogs} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> ls blogs</p>
               <p><span className="prompt">welcome@whoami:~$</span> cat contact.txt</p><p className="output">
               <a href="mailto:shreyaspandey.ethical@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></p>
               <p className="output"> <a href="https://www.github.com/Shreyas-prog108/" target="_blank" rel="noopener noreferrer">GitHub</a></p>
