@@ -216,18 +216,55 @@ export default function Whoami() {
             <div className='experience-item'>
               <div className='experience-header'>
                 <div className='company-role'>
+                  <h3>Cellyn</h3>
+                  <h4>AI Engineer</h4>
+                  <span className='location'>Remote</span>
+                </div>
+                <div className='duration'>February 2026 - March 2026</div>
+              </div>
+              <div className='experience-details'>
+                <ul>
+                  <li>Developed an enterprise-grade Excel add-in with agentic tool-calling infrastructure for real-time financial data modeling, enabling LLM-driven workflows to interact with structured financial datasets and analytical tools.</li>
+                  <li>Architected a private, encrypted data warehouse with access controls and secure data pipelines for sensitive financial information processing.</li>
+                  <li>Built an end-to-end enterprise Data Room platform from scratch in 20 days, featuring multi-tenant isolation, room-based access control, real-time notifications, audit logging, and Q&amp;A capabilities.</li>
+                  <li>Engineered AI-powered features including context-aware memory management for chat generation, automated PPT generation, sandboxed code execution, web search integration, and multi-database connectivity.</li>
+                  <li>Managed full cloud infrastructure on Scaleway, owning CI/CD pipelines, deployment workflows, automated testing, and production releases across environments.</li>
+                </ul>
+              </div>
+            </div>
+            <div className='experience-item'>
+              <div className='experience-header'>
+                <div className='company-role'>
                   <h3>Fills AI</h3>
                   <h4>AI Engineer Intern</h4>
                   <span className='location'>Remote</span>
                 </div>
-                <div className='duration'>November 2025 - Present</div>
+                <div className='duration'>November 2025 - February 2026</div>
               </div>
               <div className='experience-details'>
                 <ul>
-                  <li>Engineered collaborative document editor using LangChain + Gemini + Tiptap with AI-powered terminology correction and consistency validation, processing 500+ biological research manuscripts with 92% accuracy</li>
-                  <li>Built voice agent for hands-free scientific writing using Web Speech API for transcription, reducing manuscript drafting time by 40% for 50+ researchers</li>
-                  <li>Implemented semantic search with vector embeddings (Sentence Transformers) and RAG-based validation querying PubMed&apos;s 30M+ paper corpus, achieving 92% citation accuracy</li>
-                  <li>Deployed statically-hosted lab notes platform with real-time collaboration, automated version control, and cloud synchronization serving 10+ research laboratories</li>
+                  <li>Engineered real time collaborative scientific editor (LangChain + Gemini + Tiptap + Y.js) with automated version control and cloud sync, processing 500+ biology manuscripts with 92% terminology consistency, reducing peer-review cycles by 40% for 50+ researchers.</li>
+                  <li>Built semantic RAG system over PubMed&apos;s 30M+ paper corpus (Sentence Transformers + vector embeddings) achieving 92% citation accuracy; added hands-free voice agent via Web Speech API, cutting drafting time by 40%.</li>
+                  <li>Integrated a live AI chatbot with real-time context extraction from dashboards and MCP server integrations, enabling agentic search across multiple platforms.</li>
+                  <li>Architected and deployed a custom MCP server for the company&apos;s internal agent, bridging separately hosted services with their platform for seamless agentic tool orchestration.</li>
+                  <li>Built a Biomni agent on Stanford&apos;s Biomni data lake, deployed on AWS EC2 with EFS-backed persistent storage for scalable biomedical data retrieval and analysis.</li>
+                </ul>
+              </div>
+            </div>
+            <div className='experience-item'>
+              <div className='experience-header'>
+                <div className='company-role'>
+                  <h3>Stealth AI Startup</h3>
+                  <h4>AI Engineer</h4>
+                  <span className='location'>Remote</span>
+                </div>
+                <div className='duration'>September 2025 - November 2025</div>
+              </div>
+              <div className='experience-details'>
+                <ul>
+                  <li>Engineered a real-time customer support voice pipeline using STT–TTS models, enabling low-latency conversational AI interactions for automated customer care services.</li>
+                  <li>Optimized end-to-end speech inference and streaming architecture, reducing system latency to ~36 ms through pipeline optimization, asynchronous processing, and efficient audio buffering.</li>
+                  <li>Designed and deployed the complete DevOps and inference infrastructure, orchestrating model services, real-time audio streaming, and scalable deployment on Scaleway cloud infrastructure.</li>
                 </ul>
               </div>
             </div>
@@ -235,16 +272,15 @@ export default function Whoami() {
               <div className='experience-header'>
                 <div className='company-role'>
                   <h3>21 Spheres</h3>
-                  <h4>Python Developer</h4>
+                  <h4>Python Developer Intern</h4>
                   <span className='location'>Remote</span>
                 </div>
                 <div className='duration'>April 2025 - September 2025</div>
               </div>
               <div className='experience-details'>
                 <ul>
-                  <li>Developed and deployed multiple Python-based AI solutions including intelligent automation systems for real-world applications</li>
-                  <li>Led end-to-end development of AI agent frameworks, implementing multi-step reasoning and tool integration capabilities</li>
-                  <li>Managed cross-functional team of 3 developers in designing and implementing agentic AI systems, ensuring successful delivery of scalable AI solutions</li>
+                  <li>Developed 5+ LangChain AI agents handling 1,000+ daily queries with 88% autonomous resolution rate across 5 client deployments.</li>
+                  <li>Architected multi-agent ReAct framework achieving 85% autonomous task completion and 60% reduction in client processing time and led 3-person engineering team end-to-end.</li>
                 </ul>
               </div>
             </div>
