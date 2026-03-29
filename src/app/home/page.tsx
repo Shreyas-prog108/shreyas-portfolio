@@ -83,7 +83,7 @@ export default function Whoami() {
 
   const icons = [
     { icon: <FaHome />, link: "#whoami" },
-    { icon: <FaFileAlt />, link: "https://drive.google.com/file/d/124OM9Rbu67MV4u147mrO8E0dwUjap1mJ/view?usp=sharing" },
+    { icon: <FaFileAlt />, link: "https://drive.google.com/file/d/1_hUCEYXOh4jejzUZFMyV8OKBXP6-KwCE/view?usp=drivesdk" },
     { icon: <FaGithub />, link: "https://github.com/Shreyas-prog108" },
     { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/shreyaspandeyy/" },
     { icon: <FaXTwitter />, link: "https://x.com/Shreyas_Pandeyy" },
@@ -178,7 +178,7 @@ export default function Whoami() {
               <p className="command-prompt" onClick={scrollToSkills} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> cat skills.txt</p>
               <p className="command-prompt" onClick={scrollToExperience} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> ls Experiences</p>              
               <p className="command-prompt" onClick={scrollToProjects} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> ls projects</p>
-              <p className="command-prompt" onClick={scrollToBlogs} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> ls blogs</p>
+            
               <p><span className="prompt">welcome@whoami:~$</span> cat contact.txt</p><p className="output">
               <a href="mailto:shreyaspandey.ethical@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></p>
               <p className="output"> <a href="https://www.github.com/Shreyas-prog108/" target="_blank" rel="noopener noreferrer">GitHub</a></p>
@@ -519,7 +519,7 @@ export default function Whoami() {
           <a href="https://x.com/Shreyas_Pandeyy" className="social-link" target="_blank" rel="noopener noreferrer">X</a>
           <a href="https://www.linkedin.com/in/shreyaspandeyy/" className="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://github.com/Shreyas-prog108" className="social-link" target="_blank" rel="noopener noreferrer">Github</a>
-          <a href="https://drive.google.com/file/d/124OM9Rbu67MV4u147mrO8E0dwUjap1mJ/view?usp=sharing" className="social-link" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href="https://drive.google.com/file/d/1_hUCEYXOh4jejzUZFMyV8OKBXP6-KwCE/view?usp=drivesdk" className="social-link" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
       </footer>
       <div className="fixed-icons">
