@@ -5,6 +5,24 @@ import Link from 'next/link'
 export default function Projects() {
   const allProjects = [
     {
+      id: 0,
+      title: "shreyas-skills",
+      description: "Open-source engineering skill framework for agentic AI — Karpathy-inspired principles, shared standard for Cursor, Claude Code, Codex CLI, Windsurf, and GitHub Copilot.",
+      techStack: ["Agentic AI", "Karpathy Principles", "Cursor", "Claude Code", "MCP", "LangGraph"],
+      liveDemo: null,
+      github: "https://github.com/Shreyas-prog108/shreyas-skills",
+      featured: true
+    },
+    {
+      id: 11,
+      title: "Lumicode",
+      description: "Custom MCP server for document extraction and LLM coding context in agentic workflows.",
+      techStack: ["MCP", "LangChain", "Document Extraction", "Agent Tools"],
+      liveDemo: null,
+      github: "https://github.com/Shreyas-prog108/lumicode",
+      featured: true
+    },
+    {
       id: 1,
       title: "Citecrawler",
       description: "AI Powered Comprehensive Research Paper Searching Platform",

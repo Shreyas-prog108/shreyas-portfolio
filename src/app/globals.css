@@ -820,6 +820,60 @@ a:hover {
   color: var(--bg-color);
 }
 
+/* Blog Post Detail */
+.blog-post-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-post {
+  background-color: var(--accent-color);
+  border-radius: 8px;
+  padding: 30px;
+  border: 1px solid #333;
+}
+
+.blog-post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.blog-post-content {
+  color: #ccc;
+  line-height: 1.8;
+  margin: 25px 0;
+}
+
+.blog-post-content p {
+  margin-bottom: 1.2em;
+}
+
+.blog-post-terminal-title {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.blog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button-secondary {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.button-secondary:hover {
+  background: var(--primary-color);
+  color: var(--bg-color);
+}
+
 /* Clickable Terminal Files */
 .clickable-file {
   transition: color 0.3s ease;

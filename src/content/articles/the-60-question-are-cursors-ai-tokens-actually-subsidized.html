@@ -1,0 +1,86 @@
+<p>An investigation using one month of real usage data — June 2026. I pay $60 a month for Cursor Pro+. One billing cycle, instead of  asking whether the tool made me productive, I asked a different  question: if I had purchased every token I consumed through Cursor  directly from the model providers, at public API rates, what would that  invoice look like?The answer is $830. And then, after I corrected the calculation, it became $164. And then I realized I still could not answer the original question.</p>
+<p>Here is the full investigation.</p>
+<h2>The Raw Data</h2>
+<p>Between May 20 and June 20, 2026, my Cursor usage dashboard recorded the following across four models.</p>
+<h3>Composer 2.5 Fast — 45.3% of usage</h3>
+<pre>Cache read: 235,491,757
+Cache write: none
+Input: 18,775,004
+Output: 2,001,168
+Total tokens: 256,267,929</pre>
+<h3>GPT-5.5 Medium — 3.5% of usage</h3>
+<pre>Cache read: 3,684,864
+Cache write: none
+Input: 179,645
+Output: 35,773
+Total tokens: 3,900,282</pre>
+<h3>Claude 4.6 Sonnet Max Thinking — 1.9% of usage</h3>
+<pre>Cache read: 2,316,254
+Cache write: 122,364
+Input: 34
+Output: 63,840
+Total tokens: 2,502,492</pre>
+<h3>GPT-5.3 Codex — 1.5% of usage</h3>
+<pre>Cache read: 4,816,000
+Cache write: none
+Input: 400,872
+Output: 10,924
+Total tokens: 5,227,796</pre>
+<p>On top of these, the API section contributed roughly 1.2 crore  tokens. The Auto and Composer 2.5 sections added approximately 125,000  tokens.</p>
+<p>Total consumption for the month: north of 25.6 crore tokens.</p>
+<h2>The Naive Calculation: $830</h2>
+<p>The first instinct is straightforward. Take every token, price it  at public retail API rates, and compare the total to the $60 I paid.</p>
+<p>Here are the public rates I used, pulled directly from OpenAI and Anthropic's pricing pages as of June 2026.</p>
+<h3>Composer 2.5 Fast</h3>
+<pre>Input: $3.00 per 1M tokens
+Output: $15.00 per 1M tokens
+Cache read: $0.30 per 1M tokens</pre>
+<h3>GPT-5.5 Medium</h3>
+<pre>Input: $5.00 per 1M tokens
+Output: $30.00 per 1M tokens
+Cache read: $0.50 per 1M tokens</pre>
+<h3>Claude 4.6 Sonnet Max Thinking</h3>
+<pre>Input: $3.00 per 1M tokens
+Output: $15.00 per 1M tokens
+Cache read: $0.30 per 1M tokens</pre>
+<h3>GPT-5.3 Codex</h3>
+<pre>Input: $1.75 per 1M tokens
+Output: $14.00 per 1M tokens
+Cache read: $0.175 per 1M tokens</pre>
+<p>If you ignore the distinction between cache reads and fresh inputs —  treating every token as full-price input — you get a retail value of $830.40 for my month of usage.Against a $60 subscription, that looks like a $770 gap. On its face, it looks like Cursor absorbed thirteen times what I paid.</p>
+<p>But that calculation is wrong. Understanding exactly how it is wrong is the entire point of this investigation.The Cache Correction: $830 Becomes $164</p>
+<p>Here is the number that changes everything. Look at the cache read column in the dashboard data again.Composer 2.5 Fast: 235,491,757 cache reads vs. 18,775,004 fresh input — a 12.5:1 ratio</p>
+<p>Claude 4.6 Sonnet Max Thinking: 2,316,254 cache reads vs. 34 fresh input — literally thirty-four</p>
+<p>GPT-5.5 Medium: 3,684,864 cache reads vs. 179,645 fresh input</p>
+<p>GPT-5.3 Codex: 4,816,000 cache reads vs. 400,872 fresh input</p>
+<p>The overwhelming bulk of what the dashboard calls "tokens consumed"  are cache reads, not fresh inference. Cache reads are not priced like  fresh inference.Anthropic charges cache read tokens at 10% of the standard input  price. OpenAI charges cached input tokens at 10% of the standard input  rate as well. A cache read is memory retrieval, not model computation —  the provider reads pre-computed key-value states from storage and skips  the expensive part.When you re-run the calculation using real cache read pricing  instead of full input pricing for those 235 million cached tokens, the  numbers transform completely.Composer 2.5 Fast</p>
+<pre>Naive cost: $792.82
+Cache-adjusted cost: $156.99</pre>
+<h3>GPT-5.5 Medium</h3>
+<pre>Naive cost: $20.40
+Cache-adjusted cost: $3.81</pre>
+<h3>Claude 4.6 Sonnet Max Thinking</h3>
+<pre>Naive cost: $7.91
+Cache-adjusted cost: $2.11</pre>
+<h3>GPT-5.3 Codex</h3>
+<pre>Naive cost: $9.28
+Cache-adjusted cost: $1.70</pre>
+<h2>Total across all models</h2>
+<pre>Naive cost: $830.40
+Cache-adjusted cost: $164.61</pre>
+<p>Cache alone compressed the retail value by a factor of 5x. The "subsidy" shrinks from $770 to $104 — purely by correcting for how cache reads are actually priced. No new assumptions. No speculation. Just accurate pricing.The dashboard showed me a token count. It did not show me a cost.  Those are not the same instrument, and confusing them produced a $766  error in the naive calculation.</p>
+<h2>The Gap That Remains: $104</h2>
+<p>After the cache correction, you still land on $164.61 in retail-priced inference against a $60 subscription. That is a remaining gap of roughly $104.The question is whether that gap represents real economic loss for  Cursor, or whether it disappears once you account for what Cursor  actually pays.</p>
+<p>Here is what matters: I am not Cursor.When I call any model API directly, I pay rack rate. I commit to no  volume. I negotiate nothing. I represent a negligible fraction of any  provider's revenue.Cursor routes billions of tokens per month across its entire user  base. It has the negotiating leverage to sign volume contracts with  model providers that have no public equivalent. Enterprise software  discounts of 30% to 60% off list price are standard practice at scale.If Cursor pays even 50 cents on the dollar for inference — a  plausible number for a company at this volume, though I cannot prove the  exact figure — my $164 of retail-priced inference cost Cursor roughly $82 to serve. Against my $60 payment, the real gap narrows to approximately $22.Add the fact that my usage was almost certainly heavier than the  median Cursor Pro+ subscriber, and the portfolio economics shift  further. A subscriber who opens Cursor twice a week and triggers a few  thousand tokens pays the same $60 while consuming perhaps $2 of actual  inference at wholesale rates.The distribution of usage across all subscribers is what determines  whether Cursor's economics work — not what happens on my specific  account in my specific month.</p>
+<h2>So Are The Tokens Subsidized?</h2>
+<p>The honest answer is: the public data does not let us conclude  either way, but the gap is far smaller than the dashboard makes it look.Naive calculation: $830 consumed vs. $60 paid — misleading, misprices 235 million cache read tokens</p>
+<p>Cache-corrected: $164 at retail rates — still misleading, uses pricing Cursor almost certainly does not pay</p>
+<p>Wholesale-adjusted (50% discount assumption): Cursor's actual cost to serve my month was roughly $80–$100 — a possible gap of $20–$40 for a heavy-usage month</p>
+<p>That is a very different claim from a $770 subsidy. It is also not zero.Whether Cursor nets out positive or negative across its full user  base depends on the actual wholesale rates (unknown), the actual  distribution of usage intensity (unknown), and how well the light users  cross-subsidize the heavy ones (unknown).What is certain is this: the dashboard number is the worst possible  input for this analysis. It counts every cache read as if it were  freshly computed inference. It uses no pricing information at all.</p>
+<p>I consumed 256 million tokens from Composer 2.5 Fast. Of those,  235 million were cache reads priced at $0.30 per million. The actual  retail cost of those 235 million tokens was $70.65. Not $706. Not $707. Seventy dollars and sixty-five cents.The difference between reading that number wrong and reading it  right is the difference between thinking you received a massive subsidy  and thinking you received a moderately discounted service.</p>
+<h2>What The Numbers Actually Tell You</h2>
+<p>Three things emerge cleanly from this investigation.Cache architecture is doing the heaviest lifting. Over 91% of my total token consumption was cache reads. Any analysis  that ignores this distinction will produce a wildly inflated sense of  inference cost. The token count on the dashboard is a usage meter. It is  not an invoice.</p>
+<p>The retail API benchmark is the wrong comparison. It prices my usage against what a solo developer with no leverage would  pay at 3am on a pay-as-you-go plan. Cursor is not that entity. Any  number derived from public API pricing is an upper bound on Cursor's  real cost, not an estimate of it.</p>
+<p>A residual gap probably exists for heavy users in heavy months. Whether that gap represents deliberate subsidization, portfolio  cross-subsidization from lighter users, or margins thin enough to be  concerning is something only Cursor's own numbers can resolve.</p>
+<p>The most interesting thing about AI subscription economics is not  whether any specific company is subsidizing its users. It is that the  token counts users see every day are almost perfectly designed to make  the economics look more dramatic than they are — and most people never  run the correction. Now you have.</p>
+<p>Follow me here: <a href="https://x.com/Shreyas_Pandeyy" target="_blank" rel="noopener noreferrer">@Shreyas_Pandeyy</a> </p>

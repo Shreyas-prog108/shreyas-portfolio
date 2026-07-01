@@ -1,0 +1,111 @@
+<p>Fast-Track · For Software Engineers</p>
+<p>Already know Python and FastAPI? Skip the theory-heavy track. This is your direct path to building and deploying agentic AI systems — in weeks, not months.</p>
+<p>Total time: 10–16 weeks  |  Prerequisite: Python + FastAPI  |  ML Theory: Minimal — optional  |  Focus: Agents, LangChain, RAG, Production</p>
+<p>The philosophy: You don't need to know how to train models to build world-class AI applications. Learn the API surface, the frameworks, and the agentic patterns. You can go deeper on model internals after you've shipped something real.</p>
+<h2>Phase 1 — Neural Network Intuition (~1 week, ~4 hrs of video)</h2>
+<p>You don't need to train models. But understanding what a neural network, attention, and a transformer are makes you 10× better at prompting, debugging agent failures, and knowing what's possible. This phase is videos only — no coding required.</p>
+<p>3Blue1Brown — Neural Networks (Chapters 1–4)</p>
+<p>What is a neural network, how does gradient descent work, what is backpropagation. ~2 hours. The best visual explanations on the internet. Watch at 1.25×.</p>
+<p>→ <a href="https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" target="_blank" rel="noopener noreferrer">youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi</a></p>
+<p>3Blue1Brown — Transformers & Attention (Chapters 5–7, same playlist)</p>
+<p>How transformers work, what attention means, why tokens matter. ~2 hours. After this you'll understand what GPT-4 is doing at a mechanical level.</p>
+<p>→ Same playlist as above.</p>
+<h2>Phase 2 — LLM APIs & Prompt Engineering (~1–2 weeks)</h2>
+<p>OpenAI API Docs — Chat Completions + Function Calling</p>
+<p>Read: messages, roles, temperature, tool calling, structured outputs, and embeddings. Build a simple FastAPI wrapper around the Chat API on day 1.</p>
+<p>→ <a href="https://platform.openai.com/docs/overview" target="_blank" rel="noopener noreferrer">platform.openai.com/docs/overview</a></p>
+<p>Anthropic Claude Docs — Tool Use & Long Context</p>
+<p>Claude has first-class tool use and leads on long-context tasks. Study the tool use guide and prompt engineering best practices page.</p>
+<p>→ <a href="https://docs.anthropic.com/en/docs/welcome" target="_blank" rel="noopener noreferrer">docs.anthropic.com/en/docs/welcome</a></p>
+<p>Prompt Engineering Guide — <a href="https://DAIR.AI" target="_blank" rel="noopener noreferrer">DAIR.AI</a></p>
+<p>Chain-of-thought, few-shot, zero-shot, ReAct prompting, and structured output techniques. The most comprehensive free reference. Read the core techniques section.</p>
+<p>→ <a href="https://promptingguide.ai" target="_blank" rel="noopener noreferrer">promptingguide.ai</a></p>
+<p>ChatGPT Prompt Engineering for Developers — DeepLearning.AI (Free)</p>
+<p>1.5-hour free course by Andrew Ng and OpenAI. Summarising, inferring, transforming, expanding, building a chatbot. Highly practical, Jupyter-based.</p>
+<p>→ <a href="https://learn.deeplearning.ai/courses/chatgpt-prompt-eng-for-devs" target="_blank" rel="noopener noreferrer">learn.deeplearning.ai/courses/chatgpt-prompt-eng-for-devs</a></p>
+<h2>Phase 3 — LangChain, RAG & Vector Stores (~2–3 weeks)</h2>
+<p>LangChain — Official Python Docs</p>
+<p>Start with LCEL (LangChain Expression Language), build a simple chain, then move to retrievers. Read the conceptual guide before the how-to guides. Do the RAG quickstart end-to-end.</p>
+<p>→ <a href="https://python.langchain.com/docs/introduction" target="_blank" rel="noopener noreferrer">python.langchain.com/docs/introduction</a></p>
+<p>RAG Pipeline from Scratch</p>
+<p>Chunking strategies (recursive, semantic), embedding models (OpenAI text-embedding-3-small, nomic-embed-text), vector stores (Chroma, Qdrant), cosine similarity retrieval, re-ranking.</p>
+<p>→ Chroma: <a href="https://docs.trychroma.com" target="_blank" rel="noopener noreferrer">docs.trychroma.com</a></p>
+<p>→ Qdrant: qdrant.tech/documentation</p>
+<p>LangChain for LLM Application Development — DeepLearning.AI (Free)</p>
+<p>Free short course covering models, prompts, chains, memory, agents, and Q&A over documents. A practical companion to the LangChain docs.</p>
+<p>→ <a href="https://learn.deeplearning.ai/courses/langchain" target="_blank" rel="noopener noreferrer">learn.deeplearning.ai/courses/langchain</a></p>
+<p>HuggingFace LLM Course — Chapters 1–4</p>
+<p>Covers Transformers library, pipelines, tokenizers, and fine-tuning fundamentals. Do this to understand how open-source models work and how to swap proprietary APIs for open alternatives.</p>
+<p>→ <a href="https://huggingface.co/learn/llm-course/en/chapter1/1" target="_blank" rel="noopener noreferrer">huggingface.co/learn/llm-course/en/chapter1/1</a></p>
+<h2>Phase 4 — Agentic Frameworks (~2–3 weeks, the core of this roadmap)</h2>
+<p>LangGraph — Stateful Agent Framework</p>
+<p>Build stateful, cyclical agent graphs with nodes, edges, and checkpointing. Key patterns: ReAct agents, human-in-the-loop, multi-agent supervisor, streaming. Do the full quickstart + tutorials in the docs.</p>
+<p>→ <a href="https://langchain-ai.github.io/langgraph" target="_blank" rel="noopener noreferrer">langchain-ai.github.io/langgraph</a></p>
+<p>OpenAI Agents SDK</p>
+<p>Lightweight, production-ready agentic framework from OpenAI. Handoffs between agents, guardrails, tool calling, and streaming. Read the entire quickstart — it's short and excellent.</p>
+<p>→ <a href="https://openai.github.io/openai-agents-python" target="_blank" rel="noopener noreferrer">openai.github.io/openai-agents-python</a></p>
+<p>HuggingFace AI Agents Course (Free + Certificate)</p>
+<p>Free certified course covering smolagents, LangGraph agents, tool calling, multi-agent systems, and vision agents. One of the most practical agent courses available.</p>
+<p>→ <a href="https://huggingface.co/learn/agents-course/en/unit0/introduction" target="_blank" rel="noopener noreferrer">huggingface.co/learn/agents-course/en/unit0/introduction</a></p>
+<p>Model Context Protocol (MCP) — Anthropic</p>
+<p>The standard for connecting agents to external tools and data sources. Build an MCP server with 3–4 tools in Python. Connect to Claude or a LangGraph agent. This is where agents become genuinely useful.</p>
+<p>→ <a href="https://modelcontextprotocol.io/introduction" target="_blank" rel="noopener noreferrer">modelcontextprotocol.io/introduction</a></p>
+<p>Tool Calling Mastery</p>
+<p>Write Pydantic schemas for tools, handle parallel tool calls, implement retry logic for failed tool execution, and parse structured model outputs.</p>
+<p>→ OpenAI function calling guide: <a href="https://platform.openai.com/docs/guides/function-calling" target="_blank" rel="noopener noreferrer">platform.openai.com/docs/guides/function-calling</a></p>
+<h2>Phase 5 — FastAPI Integration & Production (~2 weeks)</h2>
+<p>Agent-as-API Pattern</p>
+<p>Expose your LangGraph or OpenAI Agents SDK agent as a FastAPI endpoint. Handle streaming with Server-Sent Events (SSE), async tool execution, session management with a checkpointer (SQLite/Redis), and auth.</p>
+<p>LangSmith — Tracing & Evaluation</p>
+<p>Trace every LLM call in your agent. Set up a basic evaluation suite. Essential for debugging why your agent is failing and proving it works before shipping.</p>
+<p>→ <a href="https://docs.smith.langchain.com" target="_blank" rel="noopener noreferrer">docs.smith.langchain.com</a></p>
+<p>Langfuse — Open-Source Observability</p>
+<p>Self-hostable alternative to LangSmith. Traces, scores, and session tracking. Add it with 3 lines of code. Run locally with Docker Compose for a fully owned observability stack.</p>
+<p>→ <a href="https://langfuse.com" target="_blank" rel="noopener noreferrer">langfuse.com</a></p>
+<p>Deploy: Docker + Cloud</p>
+<p>Containerise your FastAPI + agent app. Deploy to Railway, Render, or AWS ECS. Use environment variables for API keys. Add a Redis container for agent memory persistence. Set up basic health checks.</p>
+<p>→ Docker: <a href="https://docs.docker.com/get-started" target="_blank" rel="noopener noreferrer">docs.docker.com/get-started</a></p>
+<h2>Build These 5 Projects</h2>
+<p>Ship one per phase — they build on each other.</p>
+<p>Project 1 (Phase 2) — Smart Q&A API</p>
+<p>A FastAPI endpoint that takes a question, calls OpenAI, and returns a streamed answer. Add basic conversation history (last 10 messages).</p>
+<p>Stack: FastAPI, openai SDK, SSE</p>
+<p>Project 2 (Phase 3) — Document RAG System</p>
+<p>Upload PDFs or text files → chunk → embed → store in Chroma → query with conversational memory. Add re-ranking. Expose as a FastAPI service.</p>
+<p>Stack: LangChain, Chroma, FastAPI, Pydantic</p>
+<p>Project 3 (Phase 4) — Web Research Agent</p>
+<p>Agent that searches the web (Tavily API), reads pages, summarises findings, and returns a structured report. Built with LangGraph. Full ReAct loop with tool calling.</p>
+<p>Stack: LangGraph, Tavily, FastAPI</p>
+<p>Project 4 (Phase 4) — Multi-Agent Task Orchestrator</p>
+<p>A supervisor agent routes subtasks to specialist agents (researcher, writer, reviewer). Agents communicate via state. Demonstrates handoffs and parallel execution.</p>
+<p>Stack: LangGraph, OpenAI</p>
+<p>Project 5 (Phase 5) — Production Agent API</p>
+<p>Containerised FastAPI service wrapping your research agent. Streaming responses, Redis checkpointer for memory, Langfuse for tracing, Docker Compose for local dev, deploy to Railway.</p>
+<p>Stack: FastAPI, LangGraph, Redis, Langfuse, Docker</p>
+<h2>Skills Checklist — You're Production-Ready When You Can Check All of These</h2>
+<ul>
+<li>Call OpenAI & Anthropic APIs with proper error handling and retries</li>
+<li>Write Pydantic tool schemas and handle parallel tool calls</li>
+<li>Build a RAG pipeline with chunking, embedding, retrieval, and re-ranking</li>
+<li>Implement a LangGraph stateful agent with human-in-the-loop</li>
+<li>Expose an agent as a streaming FastAPI endpoint with SSE</li>
+<li>Add tracing and evaluation with LangSmith or Langfuse</li>
+<li>Containerise and deploy an agent service with Docker</li>
+<li>Implement agent memory with Redis or SQLite checkpointers</li>
+<li>Build and connect an MCP server</li>
+<li>Debug an agent failure by reading traces, not guessing</li>
+</ul>
+<h2>Optional — ML Theory (Return Here After the Core Track)</h2>
+<p>These are not required to build great agentic applications. Come back when you want to go deeper than the API surface — understand model internals, do fine-tuning, or read research papers.</p>
+<p>Neural Networks: Zero to Hero — Andrej Karpathy (Free)</p>
+<p>Build backpropagation and a GPT from scratch. Deepens your mental model of LLMs dramatically.</p>
+<p>→ Course site: <a href="https://karpathy.ai/zero-to-hero.html" target="_blank" rel="noopener noreferrer">karpathy.ai/zero-to-hero.html</a></p>
+<p>→ YouTube playlist: <a href="https://youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ" target="_blank" rel="noopener noreferrer">youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ</a></p>
+<p>Let's Build GPT — Andrej Karpathy (Free, 2 hrs)</p>
+<p>The canonical build-a-transformer-from-scratch video. Do after Zero to Hero or as a standalone deep dive.</p>
+<p>→ <a href="https://youtube.com/watch?v=kCc8FmEb1nY" target="_blank" rel="noopener noreferrer">youtube.com/watch?v=kCc8FmEb1nY</a></p>
+<p>ML Specialization — Andrew Ng (Coursera, Free Audit)</p>
+<p>If you want to understand how models are trained, optimised, and evaluated. Gives the classical ML background that makes you a complete AI engineer.</p>
+<p>→ <a href="https://coursera.org/specializations/machine-learning-introduction" target="_blank" rel="noopener noreferrer">coursera.org/specializations/machine-learning-introduction</a></p>
+<p>All links verified. This is the condensed fast-track version. For deeper coverage including ML foundations, NLP courses, deep learning, and 8 projects - read the main AI Engineering Roadmap. Updated 2026.</p>
+<p><a href="https://x.com/Shreyas_Pandeyy" target="_blank" rel="noopener noreferrer">@Shreyas_Pandeyy</a></p>

@@ -1,0 +1,22 @@
+# Shreyas Pandey
+
+> AIML Engineer. Long-form articles on AI, software engineering, agents, and the tech landscape.
+
+## Articles
+
+- [The Last 30 Days of AI Multiverse](https://www.shreyaspandey.me/blogs/the-last-30-days-of-ai-multiverse): June 2026 AI industry retrospective — open-source models from China, US policy, Cursor acquisition, sovereign AI in India.
+- [The $60 Question: Are Cursor's AI Tokens Actually Subsidized?](https://www.shreyaspandey.me/blogs/the-60-question-are-cursors-ai-tokens-actually-subsidized): Investigation using one month of real Cursor Pro+ usage data vs public API pricing.
+- [MiniMax's M2 Series: The clearest public blueprints for agent-native LLMs](https://www.shreyaspandey.me/blogs/minimaxs-m2-series-the-clearest-public-blueprints-for-agent-native-llms): Deep dive on M2, M2.5, and M2.7 — mini activations, long-context attention, agentdata, and RL for tools.
+- [The AI Engineering Roadmap](https://www.shreyaspandey.me/blogs/the-ai-engineering-roadmap): 2026 structured path from Python developer to production-ready AI engineer with agentic systems focus.
+- [AI Engineering Roadmap for Software Engineers](https://www.shreyaspandey.me/blogs/ai-engineering-roadmap-for-software-engineers): Fast-track path for engineers who already know Python and FastAPI to build agentic AI systems.
+- [Claude vs GPT: X Algorithm Analysis](https://www.shreyaspandey.me/blogs/i-made-claude-opus-46-max-and-gpt-55-analyze-the-x-algorithm-then-i-made-them-judge-each-other): Both models analyzed the open-source X For You algorithm, then judged each other's analysis.
+
+## Site
+
+- [Blog index](https://www.shreyaspandey.me/blogs)
+- [Portfolio / About](https://www.shreyaspandey.me/home)
+- [Projects](https://www.shreyaspandey.me/projects)
+- [X / Twitter](https://x.com/Shreyas_Pandeyy)
+- [LinkedIn](https://www.linkedin.com/in/shreyaspandeyy/)
+- [GitHub](https://github.com/Shreyas-prog108)
+- [shreyas-skills — engineering framework](https://github.com/Shreyas-prog108/shreyas-skills)

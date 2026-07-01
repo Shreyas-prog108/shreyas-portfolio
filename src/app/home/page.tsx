@@ -4,10 +4,13 @@
 import { FaHome, FaGithub, FaLinkedin, FaFileAlt, FaExternalLinkAlt } from "react-icons/fa"
 import { SiGmail } from "react-icons/si"
 import { FaXTwitter } from 'react-icons/fa6'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { useRef, useState, useEffect } from 'react'
 import emailjs from '@emailjs/browser'
 
 export default function Whoami() {
+  const router = useRouter()
   const form = useRef<HTMLFormElement>(null)
   const [formStatus, setFormStatus] = useState('')
   const [formErrors, setFormErrors] = useState<{[key: string]: string}>({})
@@ -87,15 +90,15 @@ export default function Whoami() {
     { icon: <FaGithub />, link: "https://github.com/Shreyas-prog108" },
     { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/shreyaspandeyy/" },
     { icon: <FaXTwitter />, link: "https://x.com/Shreyas_Pandeyy" },
-    { icon: <SiGmail />, link: "mailto:shreyaspandey.kvs@email.com" },
+    { icon: <SiGmail />, link: "mailto:shreyaspandey.kvs@gmail.com" },
   ]
 
   const skills = [
-    "AWS", "GCP", "CI/CD", "DevOps", "Linux", "Docker", "Kubernetes", "GraphQL", "RestAPI",
-    "Node.js", "Prisma", "React", "Next.js", "Vue.js", "Flask", "FastAPI", "Tailwind CSS", "Shadcn", "Bootstrap", "Javascript", "Typescript", "C/C++", "Python",
-    "Langchain", "Langgraph","RAG", "ML", "Pytorch", "Scikit-learn",
-    "MongoDB", "MySQL", "PostgreSQL", "SQLite", "DuckDB", "Celery", "Redis",
-    "Git", "GitHub", "GitLab", "PineconeDB" ,"Hugging Face"
+    "Python", "JavaScript", "TypeScript", "C/C++", "SQL",
+    "LangChain", "LangGraph", "PyTorch", "Scikit-learn", "Transformers", "LoRA/QLoRA", "LlamaIndex", "OpenCV",
+    "Multi-agent Systems", "ReAct", "MCP Servers", "RAG Pipelines", "Hybrid Vector Search", "RAPTOR", "DPO",
+    "React", "Next.js", "FastAPI", "Flask", "Node.js", "PostgreSQL", "PGVector", "Redis",
+    "Docker", "AWS", "GCP", "GitHub Actions", "CI/CD", "Linux"
   ]
 
   // // Featured blog posts (top 3)
@@ -147,10 +150,10 @@ export default function Whoami() {
     }
   }
 
-  const scrollToBlogs = () => {
-    const blogsSection = document.getElementById('blogs-section')
-    if (blogsSection) {
-      blogsSection.scrollIntoView({ behavior: 'smooth' })
+  const scrollToHighlights = () => {
+    const section = document.getElementById('highlights-section')
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' })
     }
   }
 
@@ -174,13 +177,16 @@ export default function Whoami() {
             <div className="terminal-content">
               <p><span className="prompt">welcome@whoami:~$</span> whoami<span className="cursor1"></span></p>
               <p className="output">Shreyas Pandey</p>
-              <p className="output"> AIML Engineer | Student</p>
+              <p className="output">AIML Engineer</p>
               <p className="command-prompt" onClick={scrollToSkills} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> cat skills.txt</p>
               <p className="command-prompt" onClick={scrollToExperience} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> ls Experiences</p>              
               <p className="command-prompt" onClick={scrollToProjects} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> ls projects</p>
-            
+              <p className="command-prompt" onClick={scrollToHighlights} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> cat shreyas-skills.md</p>
+              <p className="output"><a href="https://github.com/Shreyas-prog108/shreyas-skills" target="_blank" rel="noopener noreferrer">github.com/Shreyas-prog108/shreyas-skills</a></p>
+              <p className="command-prompt" onClick={() => router.push('/blogs')} style={{ cursor: 'pointer' }}><span className="prompt">welcome@whoami:~$</span> ls blogs</p>
+              {/* <p className="output"><Link href="/blogs">/blogs</Link></p> */}
               <p><span className="prompt">welcome@whoami:~$</span> cat contact.txt</p><p className="output">
-              <a href="mailto:shreyaspandey.ethical@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></p>
+              <a href="mailto:shreyaspandey.kvs@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></p>
               <p className="output"> <a href="https://www.github.com/Shreyas-prog108/" target="_blank" rel="noopener noreferrer">GitHub</a></p>
               <p className="output"><a href="https://www.linkedin.com/in/shreyaspandeyy/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
 
@@ -192,8 +198,68 @@ export default function Whoami() {
           <h2>About Me</h2>
           <div className="about-content">
             <div className="about-text">
-              <p>I&apos;m a passionate AIML Engineer and student with a focus on creating scalable and impactful AI solutions. My expertise lies around AI Agents, Langchain, Langgraph, AI SDK,NLP, Vector DB, MCP Server, and Machine Learning. </p>
-              <p>When I&apos;m not coding, you can find me exploring new technologies, reading tech blogs, or contributing to open-source projects.</p>
+              <p>I&apos;m an AIML Engineer focused on agentic systems, RAG pipelines, and production AI infrastructure. I work with LangChain, LangGraph, MCP servers, multi-agent frameworks, and full-stack tooling to ship scalable AI products.</p>
+              <p>I also maintain <a href="https://github.com/Shreyas-prog108/shreyas-skills" target="_blank" rel="noopener noreferrer">shreyas-skills</a> — an open-source engineering framework (Karpathy-inspired) that gives Cursor, Claude Code, Codex CLI, Windsurf, and Copilot a shared standard for building agentic AI systems.</p>
+              <p>When I&apos;m not building, you&apos;ll find me contributing to open source or writing on AI engineering.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="highlights-section" className="about">
+          <h2>Highlights</h2>
+          <div className="project-grid">
+            <div className="project-card featured-project">
+              <div className="project-header">
+                <h3>shreyas-skills</h3>
+                <span className="featured-badge">Open Source</span>
+              </div>
+              <p>
+                Personal engineering skill framework for agentic AI development — inspired by Karpathy&apos;s four LLM coding principles.
+                One canonical standard for planning, building, and shipping agents across Cursor, Claude Code, Codex CLI, Windsurf, and GitHub Copilot. MIT licensed — fork and adapt.
+              </p>
+              <div className="tech-stack">
+                <span>Karpathy Principles</span>
+                <span>Agentic AI</span>
+                <span>Cursor</span>
+                <span>Claude Code</span>
+                <span>MCP</span>
+                <span>LangGraph</span>
+              </div>
+              <div className="project-links">
+                <a href="https://github.com/Shreyas-prog108/shreyas-skills" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+
+            <div className="project-card featured-project">
+              <div className="project-header">
+                <h3>REPPL</h3>
+                <span className="featured-badge">Building</span>
+              </div>
+              <p>
+                Before the noise, see the signal. A dark, calm market read for founders who need to feel the shift before it feels obvious.
+              </p>
+              <div className="project-links">
+                <a href="https://www.reppl.org/" className="button" target="_blank" rel="noopener noreferrer">reppl.org</a>
+              </div>
+            </div>
+
+            <div className="project-card featured-project">
+              <div className="project-header">
+                <h3>Lumicode</h3>
+                <span className="featured-badge">MCP Server</span>
+              </div>
+              <p>
+                Custom MCP server for document extraction and LLM coding context — simplifies pulling structured context into agentic coding workflows.
+              </p>
+              <div className="tech-stack">
+                <span>MCP</span>
+                <span>LangChain</span>
+                <span>Document Extraction</span>
+                <span>Agent Tools</span>
+              </div>
+              <div className="project-links">
+                <a href="https://github.com/Shreyas-prog108/lumicode" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
             </div>
           </div>
         </section>
@@ -217,10 +283,10 @@ export default function Whoami() {
               <div className='experience-header'>
                 <div className='company-role'>
                   <h3>Cellyn</h3>
-                  <h4>AI Engineer</h4>
+                  <h4>AI Engineer Intern</h4>
                   <span className='location'>Remote</span>
                 </div>
-                <div className='duration'>February 2026 - March 2026</div>
+                <div className='duration'>February 2026 - April 2026</div>
               </div>
               <div className='experience-details'>
                 <ul>
@@ -255,7 +321,7 @@ export default function Whoami() {
               <div className='experience-header'>
                 <div className='company-role'>
                   <h3>Stealth AI Startup</h3>
-                  <h4>AI Engineer</h4>
+                  <h4>AI Engineer Intern</h4>
                   <span className='location'>Remote</span>
                 </div>
                 <div className='duration'>September 2025 - November 2025</div>
@@ -292,35 +358,32 @@ export default function Whoami() {
           <div className="project-grid">
             <div className="project-card featured-project">
               <div className="project-header">
-                <h3>Citecrawler</h3>
+                <h3>Autonomous Data Analysis Agent</h3>
               </div>
-              <p>AI Powered Comprehensive Research Paper Searching Platform</p>
+              <p>AI-driven analytical reasoning system with ReAct framework, natural language to code pipeline, and self-correcting multi-step analysis workflows.</p>
               <div className="tech-stack">
-                <span>RAG System</span>
-                <span>Next.js</span>
+                <span>LangChain</span>
+                <span>Gemini</span>
+                <span>ReAct</span>
+                <span>Pandas</span>
+                <span>DuckDB</span>
                 <span>FastAPI</span>
-                <span>PineconeDB</span>
-                <span>Shadcn</span>
-                <span>MongoDB</span>
-                <span>Beautiful Soup</span>
-                <span>Github Auth</span>
               </div>
               <div className="project-links">
-                <a href="https://citecrawler.vercel.app/" className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                <a href="https://github.com/Shreyas-prog108/citecrawler" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/Shreyas-prog108/data-analysis-agent" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
             <div className="project-card featured-project">
               <div className="project-header">
-                <h3>FinAlpha</h3>
+                <h3>Fin Alpha</h3>
               </div>
-              <p>A Deep Financial Analysis Agent</p>
+              <p>Deep agent stock market intelligence system with live news triggers, sentiment analysis, and event-driven multi-agent workflows.</p>
               <div className="tech-stack">
-                <span>FastAPI</span>
-                <span>Langchain</span>
-                <span>Langgraph</span>
+                <span>LangChain</span>
+                <span>LangGraph</span>
                 <span>Alpha Vantage API</span>
-                <span>Perplexity Deep Search</span>
+                <span>News API</span>
+                <span>asyncio</span>
               </div>
               <div className="project-links">
                 <a href="https://github.com/Shreyas-prog108/fin-alpha" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -328,17 +391,18 @@ export default function Whoami() {
             </div>
             <div className="project-card featured-project">
               <div className="project-header">
-                <h3>Data Analyst Agent</h3>
+                <h3>BlockSuite RAG Pipeline</h3>
               </div>
-              <p>AI Powered Data Analysis Agent</p>
+              <p>Production-grade RAG with hybrid search, semantic deduplication, query rewriting, and PGVector retrieval across 1K+ documents.</p>
               <div className="tech-stack">
-                <span>FastAPI</span>
-                <span>Langchain</span>
-                <span>DuckDB</span>
-                <span>Beautiful Soup</span>
+                <span>RAG</span>
+                <span>Hybrid Search</span>
+                <span>PGVector</span>
+                <span>PostgreSQL</span>
+                <span>LangChain</span>
               </div>
               <div className="project-links">
-                <a href="https://github.com/Shreyas-prog108/data-analysis-agent" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/Shreyas-prog108/BlockSuite-RAG-Pipeline" className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
           </div>
@@ -389,7 +453,7 @@ export default function Whoami() {
         </section> */}
 
           <section className="achievements">
-            <h2>Achievements</h2>
+            <h2>Achievements & Leadership</h2>
             <div className="achievement-item">
               <div className="achievement-header">
                 <div className="achievement-info">
@@ -408,6 +472,42 @@ export default function Whoami() {
                 </a>
               </div>
             </div>
+            <div className="achievement-item">
+              <div className="achievement-header">
+                <div className="achievement-info">
+                  <h3>YC Startup School 2026 — Top 1000 Builders in India</h3>
+                  <div className='duration'>2026 · Bangalore</div>
+                </div>
+              </div>
+            </div>
+            <div className="achievement-item">
+              <div className="achievement-header">
+                <div className="achievement-info">
+                  <h3>shreyas-skills — Open Source Engineering Framework</h3>
+                  <div className='duration'>Karpathy-inspired · MIT License</div>
+                </div>
+                <a
+                  href="https://github.com/Shreyas-prog108/shreyas-skills"
+                  className="external-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View shreyas-skills on GitHub"
+                  title="View on GitHub"
+                >
+                  <FaExternalLinkAlt />
+                </a>
+              </div>
+              <p>Shared engineering standard for agentic AI — works with Cursor, Claude Code, Codex CLI, Windsurf, and GitHub Copilot.</p>
+            </div>
+            <div className="achievement-item">
+              <div className="achievement-header">
+                <div className="achievement-info">
+                  <h3>Open Source Contributor</h3>
+                  <div className='duration'>Hacktoberfest, IWoC & more</div>
+                </div>
+              </div>
+              <p>Active contributor across 10+ repositories in Hacktoberfest, IWoC, and other OSS programs.</p>
+            </div>
           </section>
 
           <section className="achievements">
@@ -415,7 +515,7 @@ export default function Whoami() {
             <div className="achievement-item">
               <div className="achievement-header">
                 <div className="achievement-info">
-                  <h3>Indian Institute of Technology, Madras</h3>
+                  <h3>Indian Institute of Technology, Madras (Online)</h3>
                   <div className='duration'>September 2023 - July 2027</div>
                 </div>
                 <span> B.S. - Data Science and Applications</span>
@@ -427,7 +527,7 @@ export default function Whoami() {
                   <h3>KIET Group of Institutions, Ghaziabad</h3>
                   <div className='duration'>September 2023 - June 2027</div>
                 </div>
-                <span> B.Tech - Computer Science</span>
+                <span> B.Tech - Computer Science and Engineering (AKTU)</span>
                 
               </div>
             </div>
@@ -514,8 +614,8 @@ export default function Whoami() {
       <footer>
         <p>© {new Date().getFullYear()} Shreyas Pandey | Built with Love</p>
         <div className="social-links">
-          <a href="/projects" className="social-link">Projects</a>
-          {/* <a href="/blogs" className="social-link">Blog</a> */}
+          <Link href="/projects" className="social-link">Projects</Link>
+          <Link href="/blogs" className="social-link">Blog</Link>
           <a href="https://x.com/Shreyas_Pandeyy" className="social-link" target="_blank" rel="noopener noreferrer">X</a>
           <a href="https://www.linkedin.com/in/shreyaspandeyy/" className="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://github.com/Shreyas-prog108" className="social-link" target="_blank" rel="noopener noreferrer">Github</a>

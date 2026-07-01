@@ -1,0 +1,347 @@
+.blog-reader {
+  --br-bg: #ffffff;
+  --br-text: #0f1419;
+  --br-muted: #536471;
+  --br-border: #eff3f4;
+  --br-link: #1d9bf0;
+  --br-column: 600px;
+  --br-pad: 16px;
+
+  min-height: 100vh;
+  background: var(--br-bg);
+  color: var(--br-text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  transition: background 0.2s, color 0.2s;
+}
+
+.blog-reader.dark {
+  --br-bg: #000000;
+  --br-text: #e7e9ea;
+  --br-muted: #71767b;
+  --br-border: #2f3336;
+  --br-link: #1d9bf0;
+}
+
+.blog-reader.fullscreen {
+  --br-column: 100%;
+  --br-pad: 32px;
+}
+
+.blog-reader a {
+  color: var(--br-link);
+}
+
+.blog-reader-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px var(--br-pad);
+  border-bottom: 1px solid var(--br-border);
+  background: var(--br-bg);
+}
+
+.blog-reader-toolbar-left,
+.blog-reader-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blog-reader-btn {
+  appearance: none;
+  border: 1px solid var(--br-border);
+  background: transparent;
+  color: var(--br-text);
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.blog-reader-btn:hover {
+  background: var(--br-border);
+}
+
+.blog-reader-btn.active {
+  background: var(--br-text);
+  color: var(--br-bg);
+  border-color: var(--br-text);
+}
+
+.blog-reader-back {
+  color: var(--br-muted);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.blog-reader-back:hover {
+  color: var(--br-link);
+  text-decoration: underline;
+}
+
+.blog-reader-main {
+  max-width: var(--br-column);
+  margin: 0 auto;
+  padding: 0 var(--br-pad) 64px;
+}
+
+.blog-reader-article {
+  border-left: 1px solid var(--br-border);
+  border-right: 1px solid var(--br-border);
+  padding: 32px 28px 48px;
+  min-height: calc(100vh - 49px);
+}
+
+.blog-reader-cover {
+  margin: -32px -28px 28px;
+  overflow: hidden;
+}
+
+.blog-reader-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 2.5 / 1;
+  object-fit: cover;
+}
+
+.blog-reader.fullscreen .blog-reader-cover {
+  margin: -32px -40px 28px;
+}
+
+.blog-reader.fullscreen .blog-reader-article {
+  padding: 32px 40px 48px;
+}
+
+.blog-reader-header-rule {
+  border: 0;
+  border-top: 1px solid var(--br-border);
+  margin: 0 0 28px;
+}
+
+.blog-reader-footer-rule {
+  border: 0;
+  border-top: 1px solid var(--br-border);
+  margin: 32px 0 20px;
+}
+
+.blog-reader-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+}
+
+.blog-reader-meta {
+  color: var(--br-muted);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.blog-reader-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.blog-reader-tag {
+  font-size: 13px;
+  color: var(--br-link);
+}
+
+.blog-reader-excerpt {
+  margin-bottom: 28px;
+}
+
+.blog-reader-excerpt p {
+  margin: 0 0 16px;
+}
+
+.blog-reader-body {
+  line-height: 1.75;
+  font-size: 17px;
+}
+
+.blog-reader-body p {
+  margin: 0 0 1.2em;
+}
+
+.blog-reader-body h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 2em 0 0.75em;
+  line-height: 1.3;
+}
+
+.blog-reader-body h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 1.5em 0 0.5em;
+  line-height: 1.35;
+}
+
+.blog-reader-body pre {
+  background: var(--br-border);
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 1.2em;
+  white-space: pre-wrap;
+}
+
+.blog-reader-body ul,
+.blog-reader-body ol {
+  margin: 0 0 1.2em 1.4em;
+  padding: 0;
+}
+
+.blog-reader-body li {
+  margin-bottom: 0.4em;
+}
+
+.blog-reader-body blockquote {
+  border-left: 3px solid var(--br-border);
+  margin: 0 0 1.2em;
+  padding-left: 16px;
+  color: var(--br-muted);
+}
+
+.blog-reader-body figure {
+  margin: 1.5em 0;
+}
+
+.blog-reader-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.blog-reader-body a {
+  color: var(--br-link);
+  text-decoration: underline;
+}
+
+.blog-reader-body code {
+  background: var(--br-border);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.blog-reader-embed {
+  margin: 28px 0;
+  border: 1px solid var(--br-border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--br-bg);
+}
+
+.blog-reader-embed iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+  min-height: 480px;
+}
+
+.blog-reader-footer-link {
+  display: inline-block;
+  margin-top: 0;
+  color: var(--br-link);
+  font-size: 15px;
+}
+
+.blog-reader-footer-link:hover {
+  text-decoration: underline;
+}
+
+.blog-reader-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-reader-list-item {
+  padding: 0;
+  border-bottom: 1px solid var(--br-border);
+}
+
+.blog-reader-list-item:first-child {
+  padding-top: 0;
+}
+
+.blog-reader-list-card {
+  display: flex;
+  gap: 16px;
+  padding: 20px 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-reader-list-card:hover .blog-reader-list-link {
+  color: var(--br-link);
+}
+
+.blog-reader-list-thumb {
+  flex-shrink: 0;
+  width: 120px;
+  height: 72px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--br-border);
+}
+
+.blog-reader-list-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-reader-list-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.blog-reader-list-link {
+  color: var(--br-text);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  display: block;
+}
+
+.blog-reader-list-meta {
+  color: var(--br-muted);
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.blog-reader-list-excerpt {
+  color: var(--br-muted);
+  font-size: 15px;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.blog-reader-heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.blog-reader-subheading {
+  color: var(--br-muted);
+  font-size: 15px;
+  margin: 0 0 32px;
+}
