@@ -8,6 +8,7 @@ import time
 import urllib.request
 
 STATUS_IDS = [
+    ("dear-first-year-nobody-will-tell-you-this-so-i-will", "2073422233197060235"),
     ("the-last-30-days-of-ai-multiverse", "2067615097477083408"),
     ("the-60-question-are-cursors-ai-tokens-actually-subsidized", "2064371342892560416"),
     ("minimaxs-m2-series-the-clearest-public-blueprints-for-agent-native-llms", "2060012257724264797"),

@@ -33,6 +33,17 @@ export function getCoverImageUrl(slug: string): string {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: slugify('Dear First Year: Nobody Will Tell You This, So I Will'),
+    title: 'Dear First Year: Nobody Will Tell You This, So I Will',
+    excerpt:
+      'Yaar listen, first year is the most wasted year for 90% of engineering students, and nobody warns you about it. A senior letter on what actually matters before the four years run away.',
+    date: '2026-07-04',
+    readTime: '8 min read',
+    tags: ['Career', 'Students', 'Advice'],
+    xUrl: 'https://x.com/Shreyas_Pandeyy/status/2073422233197060235',
+    coverImage: '/blog-covers/dear-first-year-nobody-will-tell-you-this-so-i-will.jpg',
+  },
+  {
     slug: slugify('The Last 30 Days of AI Multiverse'),
     title: 'The Last 30 Days of AI Multiverse',
     excerpt:

@@ -4,6 +4,7 @@
 
 ## Articles
 
+- [Dear First Year: Nobody Will Tell You This, So I Will](https://www.shreyaspandey.me/blogs/dear-first-year-nobody-will-tell-you-this-so-i-will): A senior letter to first-year engineering students on CGPA, skills, hackathons, and building in public.
 - [The Last 30 Days of AI Multiverse](https://www.shreyaspandey.me/blogs/the-last-30-days-of-ai-multiverse): June 2026 AI industry retrospective — open-source models from China, US policy, Cursor acquisition, sovereign AI in India.
 - [The $60 Question: Are Cursor's AI Tokens Actually Subsidized?](https://www.shreyaspandey.me/blogs/the-60-question-are-cursors-ai-tokens-actually-subsidized): Investigation using one month of real Cursor Pro+ usage data vs public API pricing.
 - [MiniMax's M2 Series: The clearest public blueprints for agent-native LLMs](https://www.shreyaspandey.me/blogs/minimaxs-m2-series-the-clearest-public-blueprints-for-agent-native-llms): Deep dive on M2, M2.5, and M2.7 — mini activations, long-context attention, agentdata, and RL for tools.
