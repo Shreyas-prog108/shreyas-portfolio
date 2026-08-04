@@ -516,7 +516,6 @@ export default function Whoami() {
               <div className="achievement-header">
                 <div className="achievement-info">
                   <h3>Indian Institute of Technology, Madras (Online)</h3>
-                  <div className='duration'>September 2023 - July 2027</div>
                 </div>
                 <span> B.S. - Data Science and Applications</span>
                 
@@ -525,7 +524,6 @@ export default function Whoami() {
               <div className="achievement-header">
                 <div className="achievement-info">
                   <h3>KIET Group of Institutions, Ghaziabad</h3>
-                  <div className='duration'>September 2023 - June 2027</div>
                 </div>
                 <span> B.Tech - Computer Science and Engineering (AKTU)</span>
                 
